@@ -239,6 +239,18 @@ class SnippetRevision extends Model
     ];
 
     /**
+     * Access the parent of the revisioned model.
+     */
+    public function parent(): HasOne
+    {
+        return $this->hasOne(
+            Snippet::class,
+            'id',
+            'parent_id'
+        );
+    }
+
+    /**
      * The snippet of the revision.
      */
     public function snippet(): HasOne

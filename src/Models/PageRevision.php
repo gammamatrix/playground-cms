@@ -254,6 +254,18 @@ class PageRevision extends Model
     ];
 
     /**
+     * Access the parent of the revisioned model.
+     */
+    public function parent(): HasOne
+    {
+        return $this->hasOne(
+            Page::class,
+            'id',
+            'parent_id'
+        );
+    }
+
+    /**
      * The page of the revision.
      */
     public function page(): HasOne
