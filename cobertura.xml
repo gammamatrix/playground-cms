@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="1" branch-rate="0" lines-covered="43" lines-valid="43" branches-covered="0" branches-valid="0" complexity="16" version="0.4" timestamp="1708466521">
+<coverage line-rate="1" branch-rate="0" lines-covered="53" lines-valid="53" branches-covered="0" branches-valid="0" complexity="18" version="0.4" timestamp="1708471646">
   <sources>
     <source>/app/src</source>
   </sources>
@@ -13,17 +13,26 @@
         </class>
       </classes>
     </package>
-    <package name="Models/PageRevision.php" line-rate="1" branch-rate="0" complexity="1">
+    <package name="Models/PageRevision.php" line-rate="1" branch-rate="0" complexity="2">
       <classes>
-        <class name="Playground\Cms\Models\PageRevision" filename="Models/PageRevision.php" line-rate="1" branch-rate="0" complexity="1">
+        <class name="Playground\Cms\Models\PageRevision" filename="Models/PageRevision.php" line-rate="1" branch-rate="0" complexity="2">
           <methods>
-            <method name="page" signature="" line-rate="1" branch-rate="0" complexity="1">
+            <method name="parent" signature="" line-rate="1" branch-rate="0" complexity="1">
               <lines>
                 <line number="261" hits="2"/>
                 <line number="262" hits="2"/>
                 <line number="263" hits="2"/>
                 <line number="264" hits="2"/>
                 <line number="265" hits="2"/>
+              </lines>
+            </method>
+            <method name="page" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="273" hits="2"/>
+                <line number="274" hits="2"/>
+                <line number="275" hits="2"/>
+                <line number="276" hits="2"/>
+                <line number="277" hits="2"/>
               </lines>
             </method>
           </methods>
@@ -33,6 +42,11 @@
             <line number="263" hits="2"/>
             <line number="264" hits="2"/>
             <line number="265" hits="2"/>
+            <line number="273" hits="2"/>
+            <line number="274" hits="2"/>
+            <line number="275" hits="2"/>
+            <line number="276" hits="2"/>
+            <line number="277" hits="2"/>
           </lines>
         </class>
       </classes>
@@ -45,17 +59,26 @@
         </class>
       </classes>
     </package>
-    <package name="Models/SnippetRevision.php" line-rate="1" branch-rate="0" complexity="1">
+    <package name="Models/SnippetRevision.php" line-rate="1" branch-rate="0" complexity="2">
       <classes>
-        <class name="Playground\Cms\Models\SnippetRevision" filename="Models/SnippetRevision.php" line-rate="1" branch-rate="0" complexity="1">
+        <class name="Playground\Cms\Models\SnippetRevision" filename="Models/SnippetRevision.php" line-rate="1" branch-rate="0" complexity="2">
           <methods>
-            <method name="snippet" signature="" line-rate="1" branch-rate="0" complexity="1">
+            <method name="parent" signature="" line-rate="1" branch-rate="0" complexity="1">
               <lines>
                 <line number="246" hits="2"/>
                 <line number="247" hits="2"/>
                 <line number="248" hits="2"/>
                 <line number="249" hits="2"/>
                 <line number="250" hits="2"/>
+              </lines>
+            </method>
+            <method name="snippet" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="258" hits="2"/>
+                <line number="259" hits="2"/>
+                <line number="260" hits="2"/>
+                <line number="261" hits="2"/>
+                <line number="262" hits="2"/>
               </lines>
             </method>
           </methods>
@@ -65,6 +88,11 @@
             <line number="248" hits="2"/>
             <line number="249" hits="2"/>
             <line number="250" hits="2"/>
+            <line number="258" hits="2"/>
+            <line number="259" hits="2"/>
+            <line number="260" hits="2"/>
+            <line number="261" hits="2"/>
+            <line number="262" hits="2"/>
           </lines>
         </class>
       </classes>

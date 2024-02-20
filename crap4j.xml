@@ -1,22 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <crap_result>
   <project/>
-  <timestamp>2024-02-20 22:02:01</timestamp>
+  <timestamp>2024-02-20 23:27:26</timestamp>
   <stats>
     <name>Method Crap Stats</name>
-    <methodCount>7</methodCount>
+    <methodCount>9</methodCount>
     <crapMethodCount>0</crapMethodCount>
     <crapLoad>0</crapLoad>
-    <totalCrap>16</totalCrap>
+    <totalCrap>18</totalCrap>
     <crapMethodPercent>0</crapMethodPercent>
   </stats>
   <methods>
     <method>
       <package>Playground\Cms\Models</package>
       <className>Playground\Cms\Models\PageRevision</className>
+      <methodName>parent</methodName>
+      <methodSignature>parent(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>parent(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Models</package>
+      <className>Playground\Cms\Models\PageRevision</className>
       <methodName>page</methodName>
       <methodSignature>page(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
       <fullMethod>page(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Models</package>
+      <className>Playground\Cms\Models\SnippetRevision</className>
+      <methodName>parent</methodName>
+      <methodSignature>parent(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
+      <fullMethod>parent(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
