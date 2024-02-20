@@ -1,0 +1,67 @@
+{
+    "name": "gammamatrix/playground-cms",
+    "description": "Playground: Provide the Cms models for a Playground Laravel application.",
+    "keywords": [
+        "cms",
+        "gammamatrix",
+        "laravel",
+        "playground"
+    ],
+    "homepage": "https://github.com/gammamatrix/playground-cms/wiki",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jeremy Postlethwaite",
+            "email": "jeremy.postlethwaite@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "gammamatrix/playground": "dev-develop|dev-master|dev-feature/*|^73.0"
+    },
+    "require-dev": {
+        "gammamatrix/playground-test": "dev-develop|dev-master|dev-feature/*|^73.0"
+    },
+    "suggest": {
+        "gammamatrix/playground-cms-api": "Provides an API, without a UI, to interact with the models provided in this package.",
+        "gammamatrix/playground-cms-resource": "Provides a resource API and optional Blade UI to interact with the models provided in this package."
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Database\\Factories\\Playground\\Cms\\Models\\": "database/factories/",
+            "Playground\\Cms\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Feature\\Playground\\Cms\\": "tests/Feature/",
+            "Tests\\Unit\\Playground\\Cms\\": "tests/Unit/"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "preferred-install": {
+            "gammamatrix/*": "source",
+            "*": "dist"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "73.x-dev",
+            "dev-master": "73.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Playground\\Cms\\ServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "format": "vendor/bin/php-cs-fixer fix",
+        "analyse": "vendor/bin/phpstan analyse --verbose --debug --level max"
+    }
+}
