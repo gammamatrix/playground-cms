@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+<coverage line-rate="1" branch-rate="0" lines-covered="43" lines-valid="43" branches-covered="0" branches-valid="0" complexity="16" version="0.4" timestamp="1708410007">
+  <sources>
+    <source>/app/src</source>
+  </sources>
+  <packages>
+    <package name="Models/Page.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes>
+        <class name="Playground\Cms\Models\Page" filename="Models/Page.php" line-rate="0" branch-rate="0" complexity="0">
+          <methods/>
+          <lines/>
+        </class>
+      </classes>
+    </package>
+    <package name="Models/PageRevision.php" line-rate="1" branch-rate="0" complexity="1">
+      <classes>
+        <class name="Playground\Cms\Models\PageRevision" filename="Models/PageRevision.php" line-rate="1" branch-rate="0" complexity="1">
+          <methods>
+            <method name="page" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="254" hits="2"/>
+                <line number="255" hits="2"/>
+                <line number="256" hits="2"/>
+                <line number="257" hits="2"/>
+                <line number="258" hits="2"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="254" hits="2"/>
+            <line number="255" hits="2"/>
+            <line number="256" hits="2"/>
+            <line number="257" hits="2"/>
+            <line number="258" hits="2"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="Models/Snippet.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes>
+        <class name="Playground\Cms\Models\Snippet" filename="Models/Snippet.php" line-rate="0" branch-rate="0" complexity="0">
+          <methods/>
+          <lines/>
+        </class>
+      </classes>
+    </package>
+    <package name="Models/SnippetRevision.php" line-rate="1" branch-rate="0" complexity="1">
+      <classes>
+        <class name="Playground\Cms\Models\SnippetRevision" filename="Models/SnippetRevision.php" line-rate="1" branch-rate="0" complexity="1">
+          <methods>
+            <method name="snippet" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="243" hits="2"/>
+                <line number="244" hits="2"/>
+                <line number="245" hits="2"/>
+                <line number="246" hits="2"/>
+                <line number="247" hits="2"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="243" hits="2"/>
+            <line number="244" hits="2"/>
+            <line number="245" hits="2"/>
+            <line number="246" hits="2"/>
+            <line number="247" hits="2"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="ServiceProvider.php" line-rate="1" branch-rate="0" complexity="14">
+      <classes>
+        <class name="Playground\Cms\ServiceProvider" filename="ServiceProvider.php" line-rate="1" branch-rate="0" complexity="14">
+          <methods>
+            <method name="boot" signature="" line-rate="1" branch-rate="0" complexity="5">
+              <lines>
+                <line number="30" hits="20"/>
+                <line number="32" hits="20"/>
+                <line number="34" hits="20"/>
+                <line number="36" hits="20"/>
+                <line number="37" hits="20"/>
+                <line number="38" hits="20"/>
+                <line number="41" hits="20"/>
+                <line number="44" hits="20"/>
+                <line number="45" hits="20"/>
+                <line number="50" hits="20"/>
+              </lines>
+            </method>
+            <method name="register" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="58" hits="20"/>
+                <line number="59" hits="20"/>
+                <line number="60" hits="20"/>
+                <line number="61" hits="20"/>
+              </lines>
+            </method>
+            <method name="publishMigrations" signature="" line-rate="1" branch-rate="0" complexity="2">
+              <lines>
+                <line number="69" hits="20"/>
+                <line number="71" hits="20"/>
+                <line number="72" hits="20"/>
+                <line number="73" hits="20"/>
+                <line number="74" hits="20"/>
+                <line number="75" hits="20"/>
+                <line number="76" hits="20"/>
+                <line number="77" hits="20"/>
+                <line number="80" hits="20"/>
+              </lines>
+            </method>
+            <method name="about" signature="" line-rate="1" branch-rate="0" complexity="5">
+              <lines>
+                <line number="85" hits="20"/>
+                <line number="86" hits="20"/>
+                <line number="88" hits="20"/>
+                <line number="90" hits="20"/>
+                <line number="92" hits="20"/>
+                <line number="93" hits="20"/>
+                <line number="94" hits="20"/>
+                <line number="95" hits="20"/>
+                <line number="96" hits="20"/>
+              </lines>
+            </method>
+            <method name="version" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="101" hits="20"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="30" hits="20"/>
+            <line number="32" hits="20"/>
+            <line number="34" hits="20"/>
+            <line number="36" hits="20"/>
+            <line number="37" hits="20"/>
+            <line number="38" hits="20"/>
+            <line number="41" hits="20"/>
+            <line number="44" hits="20"/>
+            <line number="45" hits="20"/>
+            <line number="50" hits="20"/>
+            <line number="58" hits="20"/>
+            <line number="59" hits="20"/>
+            <line number="60" hits="20"/>
+            <line number="61" hits="20"/>
+            <line number="69" hits="20"/>
+            <line number="71" hits="20"/>
+            <line number="72" hits="20"/>
+            <line number="73" hits="20"/>
+            <line number="74" hits="20"/>
+            <line number="75" hits="20"/>
+            <line number="76" hits="20"/>
+            <line number="77" hits="20"/>
+            <line number="80" hits="20"/>
+            <line number="85" hits="20"/>
+            <line number="86" hits="20"/>
+            <line number="88" hits="20"/>
+            <line number="90" hits="20"/>
+            <line number="92" hits="20"/>
+            <line number="93" hits="20"/>
+            <line number="94" hits="20"/>
+            <line number="95" hits="20"/>
+            <line number="96" hits="20"/>
+            <line number="101" hits="20"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>
