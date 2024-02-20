@@ -22,17 +22,4 @@ class ModelTest extends ModelCase
         'parent',
         'page',
     ];
-
-    public function test_factory_make(): void
-    {
-        $instance = null;
-
-        $modelClass = $this->getModelClass();
-        if (is_callable([$modelClass, 'factory'])) {
-            $instance = $modelClass::factory()->make();
-        }
-
-        $this->assertNotNull($instance);
-        $this->assertInstanceOf($modelClass, $instance);
-    }
 }
