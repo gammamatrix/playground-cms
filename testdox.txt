@@ -1,36 +1,40 @@
 Model (Tests\Feature\Playground\Cms\Models\PageRevision\Model)
  [x] Model instance
- [x] Verify relationships
+ [x] Verify model relationships
+ [x] Factory create
 
 Model (Tests\Feature\Playground\Cms\Models\Page\Model)
  [x] Model instance
- [x] Verify relationships
+ [x] Verify model relationships
+ [x] Factory create
 
 Model (Tests\Feature\Playground\Cms\Models\SnippetRevision\Model)
  [x] Model instance
- [x] Verify relationships
+ [x] Verify model relationships
+ [x] Factory create
 
 Model (Tests\Feature\Playground\Cms\Models\Snippet\Model)
  [x] Model instance
- [x] Verify relationships
+ [x] Verify model relationships
+ [x] Factory create
 
 Model (Tests\Unit\Playground\Cms\Models\PageRevision\Model)
- [x] Factory make
  [x] Model instance
  [x] Verify model relationships
+ [x] Model factory make
 
 Model (Tests\Unit\Playground\Cms\Models\Page\Model)
- [x] Factory make
  [x] Model instance
  [x] Verify model relationships
+ [x] Model factory make
 
 Model (Tests\Unit\Playground\Cms\Models\SnippetRevision\Model)
- [x] Factory make
  [x] Model instance
  [x] Verify model relationships
+ [x] Model factory make
 
 Model (Tests\Unit\Playground\Cms\Models\Snippet\Model)
- [x] Factory make
  [x] Model instance
  [x] Verify model relationships
+ [x] Model factory make
 
