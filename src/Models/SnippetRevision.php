@@ -12,7 +12,7 @@ use Playground\Models\Model;
  */
 class SnippetRevision extends Model
 {
-    protected $table = 'cms_snippets';
+    protected $table = 'cms_snippet_revisions';
 
     /**
      * The default values for attributes.
@@ -69,6 +69,7 @@ class SnippetRevision extends Model
         'released' => false,
         'retired' => false,
         'resolved' => false,
+        'sitemap' => false,
         'suspended' => false,
         'unknown' => false,
         'label' => '',
@@ -142,6 +143,7 @@ class SnippetRevision extends Model
         'released' => 'boolean',
         'retired' => 'boolean',
         'resolved' => 'boolean',
+        'sitemap' => 'boolean',
         'suspended' => 'boolean',
         'unknown' => 'boolean',
         'label' => 'string',
@@ -214,6 +216,7 @@ class SnippetRevision extends Model
         'released',
         'retired',
         'resolved',
+        'sitemap',
         'suspended',
         'unknown',
         'label',

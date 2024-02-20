@@ -43,4 +43,3 @@ class ModelTest extends ModelCase
         ],
     ];
 }
-

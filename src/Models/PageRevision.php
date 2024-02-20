@@ -12,7 +12,7 @@ use Playground\Models\Model;
  */
 class PageRevision extends Model
 {
-    protected $table = 'cms_pages';
+    protected $table = 'cms_page_revisions';
 
     /**
      * The default values for attributes.
@@ -70,6 +70,7 @@ class PageRevision extends Model
         'released' => false,
         'retired' => false,
         'resolved' => false,
+        'sitemap' => false,
         'suspended' => false,
         'unknown' => false,
         'is_external' => false,
@@ -144,6 +145,7 @@ class PageRevision extends Model
         'released' => 'boolean',
         'retired' => 'boolean',
         'resolved' => 'boolean',
+        'sitemap' => 'boolean',
         'suspended' => 'boolean',
         'unknown' => 'boolean',
         'only_admin' => 'boolean',
@@ -224,8 +226,13 @@ class PageRevision extends Model
         'released',
         'retired',
         'resolved',
+        'sitemap',
         'suspended',
         'unknown',
+        'is_external',
+        'is_redirect',
+        'redirect_delay',
+        'status_code',
         'label',
         'title',
         'byline',

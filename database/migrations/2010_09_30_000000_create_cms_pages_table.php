@@ -23,9 +23,9 @@ return new class extends Migration
 
             // IDs
 
-            $table->uuid('created_id')->nullable()->index();
-            $table->uuid('modified_id')->nullable()->index();
-            $table->uuid('owner_id')->nullable()->index();
+            $table->uuid('created_by_id')->nullable()->index();
+            $table->uuid('modified_by_id')->nullable()->index();
+            $table->uuid('owned_by_id')->nullable()->index();
             $table->uuid('parent_id')->nullable()->index();
             $table->string('page_type')->nullable()->index();
 
@@ -78,6 +78,8 @@ return new class extends Migration
             $table->boolean('fixed')->default(0);
             $table->boolean('flagged')->default(0);
             $table->boolean('internal')->default(0);
+            $table->boolean('is_external')->default(0);
+            $table->boolean('is_redirect')->default(0);
             $table->boolean('locked')->default(0);
             $table->boolean('pending')->default(0);
             $table->boolean('planned')->default(0);
@@ -86,8 +88,12 @@ return new class extends Migration
             $table->boolean('released')->default(0);
             $table->boolean('retired')->default(0);
             $table->boolean('resolved')->default(0);
+            $table->boolean('sitemap')->default(0);
             $table->boolean('suspended')->default(0);
             $table->boolean('unknown')->default(0);
+
+            $table->integer('redirect_delay')->unsigned()->default(0);
+            $table->integer('status_code')->unsigned()->default(200);
 
             // Strings
 

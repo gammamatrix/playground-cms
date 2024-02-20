@@ -23,9 +23,9 @@ return new class extends Migration
 
             // IDs
 
-            $table->uuid('created_id')->nullable()->index();
-            $table->uuid('modified_id')->nullable()->index();
-            $table->uuid('owner_id')->nullable()->index();
+            $table->uuid('created_by_id')->nullable()->index();
+            $table->uuid('modified_by_id')->nullable()->index();
+            $table->uuid('owned_by_id')->nullable()->index();
             $table->uuid('parent_id')->nullable()->index();
             $table->string('snippet_type')->nullable()->index();
 
@@ -68,32 +68,31 @@ return new class extends Migration
             $table->bigInteger('revision')->default(0);
             $table->bigInteger('size')->default(0);
 
-            // UI
-
-            $table->string('style')->default('');
-            $table->string('klass')->default('');
-            $table->string('icon')->default('');
-            $table->string('image')->default('');
-            $table->string('avatar')->default('');
-
-            // Entity
-
-            $table->tinyInteger('active')->default(0)->unsigned()->index();
-
             // Flags
 
-            $table->tinyInteger('flagged')->default(0)->unsigned();
-            $table->tinyInteger('internal')->default(0)->unsigned();
-            $table->tinyInteger('locked')->default(0)->unsigned();
-            $table->tinyInteger('pending')->default(0)->unsigned();
-            $table->tinyInteger('planned')->default(0)->unsigned();
-            $table->tinyInteger('problem')->default(0)->unsigned();
-            $table->tinyInteger('published')->default(0)->unsigned();
-            $table->tinyInteger('sitemap')->default(0)->unsigned();
-            $table->tinyInteger('suspended')->default(0)->unsigned();
+            $table->boolean('active')->default(1)->index();
+            $table->boolean('canceled')->default(0);
+            $table->boolean('closed')->default(0);
+            $table->boolean('completed')->default(0);
+            $table->boolean('duplicate')->default(0);
+            $table->boolean('fixed')->default(0);
+            $table->boolean('flagged')->default(0);
+            $table->boolean('internal')->default(0);
+            $table->boolean('locked')->default(0);
+            $table->boolean('pending')->default(0);
+            $table->boolean('planned')->default(0);
+            $table->boolean('problem')->default(0);
+            $table->boolean('published')->default(0);
+            $table->boolean('released')->default(0);
+            $table->boolean('retired')->default(0);
+            $table->boolean('resolved')->default(0);
+            $table->boolean('sitemap')->default(0);
+            $table->boolean('suspended')->default(0);
+            $table->boolean('unknown')->default(0);
 
             // Strings
 
+            $table->string('label')->default('');
             $table->string('title')->default('');
             $table->string('byline')->default('');
             $table->string('slug')->nullable()->default(null)->index();
@@ -102,6 +101,13 @@ return new class extends Migration
             $table->string('introduction')->default('');
             $table->mediumText('content')->nullable();
             $table->mediumText('summary')->nullable();
+
+            // UI
+
+            $table->string('icon')->default('');
+            $table->string('image')->default('');
+            $table->string('avatar')->default('');
+            $table->json('ui')->nullable()->default(new Expression('(JSON_OBJECT())'));
 
             // JSON
 

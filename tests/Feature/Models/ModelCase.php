@@ -5,6 +5,7 @@
 namespace Tests\Feature\Playground\Cms\Models;
 
 use Illuminate\Foundation\Testing\DatabaseTransactions;
+use Illuminate\Support\Carbon;
 use Playground\Cms\ServiceProvider;
 use Playground\ServiceProvider as PlaygroundServiceProvider;
 use Playground\Test\Feature\Models\ModelCase as BaseModelCase;
@@ -15,6 +16,12 @@ use Playground\Test\Feature\Models\ModelCase as BaseModelCase;
 class ModelCase extends BaseModelCase
 {
     use DatabaseTransactions;
+
+    protected bool $load_migrations_cms = true;
+
+    protected bool $load_migrations_laravel = false;
+
+    protected bool $load_migrations_playground = true;
 
     protected function getPackageProviders($app)
     {
@@ -30,9 +37,19 @@ class ModelCase extends BaseModelCase
     protected function setUp(): void
     {
         parent::setUp();
+
+        Carbon::setTestNow(Carbon::now());
+
         if (! empty(env('TEST_DB_MIGRATIONS'))) {
-            $this->loadMigrationsFrom(dirname(dirname(__DIR__)).'/database/migrations-laravel');
-            $this->loadMigrationsFrom(dirname(dirname(__DIR__)).'/database/migrations');
+            if ($this->load_migrations_cms) {
+                $this->loadMigrationsFrom(dirname(dirname(dirname(__DIR__))).'/database/migrations');
+            }
+            // if ($this->load_migrations_laravel) {
+            //     $this->loadMigrationsFrom(dirname(dirname(dirname(__DIR__))).'/database/migrations-laravel');
+            // }
+            if ($this->load_migrations_playground) {
+                $this->loadMigrationsFrom(dirname(dirname(dirname(__DIR__))).'/database/migrations-playground');
+            }
         }
     }
 
