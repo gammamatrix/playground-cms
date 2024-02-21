@@ -252,7 +252,7 @@ class Page extends Model
     ];
 
     /**
-     * Get the revisiones of the model.
+     * Get the revisions of the model.
      */
     public function revisions(): HasMany
     {

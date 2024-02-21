@@ -21,4 +21,8 @@ class ModelTest extends ModelCase
         'owner',
         'parent',
     ];
+
+    protected array $hasMany = [
+        'revisions',
+    ];
 }
