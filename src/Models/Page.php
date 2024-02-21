@@ -4,6 +4,7 @@
  */
 namespace Playground\Cms\Models;
 
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Playground\Models\Model;
 
 /**
@@ -249,4 +250,16 @@ class Page extends Model
         'options',
         'sources',
     ];
+
+    /**
+     * Get the revisiones of the model.
+     */
+    public function revisions(): HasMany
+    {
+        return $this->hasMany(
+            PageRevision::class,
+            'page_id',
+            'id'
+        );
+    }
 }
