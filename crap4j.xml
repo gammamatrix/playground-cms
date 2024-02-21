@@ -1,16 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <crap_result>
   <project/>
-  <timestamp>2024-02-20 23:33:49</timestamp>
+  <timestamp>2024-02-21 23:42:54</timestamp>
   <stats>
     <name>Method Crap Stats</name>
-    <methodCount>9</methodCount>
+    <methodCount>11</methodCount>
     <crapMethodCount>0</crapMethodCount>
     <crapLoad>0</crapLoad>
-    <totalCrap>18</totalCrap>
+    <totalCrap>22</totalCrap>
     <crapMethodPercent>0</crapMethodPercent>
   </stats>
   <methods>
+    <method>
+      <package>Playground\Cms\Models</package>
+      <className>Playground\Cms\Models\Page</className>
+      <methodName>revisions</methodName>
+      <methodSignature>revisions(): Illuminate\Database\Eloquent\Relations\HasMany</methodSignature>
+      <fullMethod>revisions(): Illuminate\Database\Eloquent\Relations\HasMany</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
     <method>
       <package>Playground\Cms\Models</package>
       <className>Playground\Cms\Models\PageRevision</className>
@@ -31,6 +42,17 @@
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Models</package>
+      <className>Playground\Cms\Models\Snippet</className>
+      <methodName>revisions</methodName>
+      <methodSignature>revisions(): Illuminate\Database\Eloquent\Relations\HasMany</methodSignature>
+      <fullMethod>revisions(): Illuminate\Database\Eloquent\Relations\HasMany</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
