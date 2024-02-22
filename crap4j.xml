@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <crap_result>
   <project/>
-  <timestamp>2024-02-21 23:42:54</timestamp>
+  <timestamp>2024-02-22 00:00:16</timestamp>
   <stats>
     <name>Method Crap Stats</name>
     <methodCount>11</methodCount>
     <crapMethodCount>0</crapMethodCount>
     <crapLoad>0</crapLoad>
-    <totalCrap>22</totalCrap>
+    <totalCrap>20</totalCrap>
     <crapMethodPercent>0</crapMethodPercent>
   </stats>
   <methods>
@@ -17,9 +17,9 @@
       <methodName>revisions</methodName>
       <methodSignature>revisions(): Illuminate\Database\Eloquent\Relations\HasMany</methodSignature>
       <fullMethod>revisions(): Illuminate\Database\Eloquent\Relations\HasMany</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -50,9 +50,9 @@
       <methodName>revisions</methodName>
       <methodSignature>revisions(): Illuminate\Database\Eloquent\Relations\HasMany</methodSignature>
       <fullMethod>revisions(): Illuminate\Database\Eloquent\Relations\HasMany</fullMethod>
-      <crap>2</crap>
+      <crap>1</crap>
       <complexity>1</complexity>
-      <coverage>0</coverage>
+      <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>

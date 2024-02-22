@@ -1,3 +1,6 @@
+Command (Tests\Feature\Playground\Cms\Console\Commands\About\Command)
+ [x] Command about displays package information and succeed with code 0
+
 Model (Tests\Feature\Playground\Cms\Models\PageRevision\Model)
  [x] Model instance
  [x] Verify model relationships
