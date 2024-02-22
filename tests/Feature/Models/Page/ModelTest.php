@@ -15,6 +15,13 @@ class ModelTest extends ModelCase
 
     protected bool $hasRelationships = true;
 
+    /**
+     * @var array<string, array<string, mixed>> Test hasMany relationships.
+     */
+    protected array $hasMany = [
+        'revisions' => ['key' => 'page_id', 'modelClass' => \Playground\Cms\Models\PageRevision::class],
+    ];
+
     protected array $hasOne = [
         'creator' => [
             'key' => 'created_by_id',

@@ -15,14 +15,14 @@ class ModelTest extends ModelCase
 
     protected bool $hasRelationships = true;
 
+    protected array $hasMany = [
+        'revisions',
+    ];
+
     protected array $hasOne = [
         'creator',
         'modifier',
         'owner',
         'parent',
-    ];
-
-    protected array $hasMany = [
-        'revisions',
     ];
 }
