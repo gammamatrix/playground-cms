@@ -20,7 +20,7 @@ composer require gammamatrix/playground-cms
 
 Playground CMS provides information in the `artisan about` command.
 
-<!-- <img src="resources/docs/artisan-about-playground-cms.png" alt="screenshot of artisan about command with Playground CMS."> -->
+<img src="resources/docs/artisan-about-playground-cms.png" alt="screenshot of artisan about command with Playground CMS.">
 
 ## Configuration
 
