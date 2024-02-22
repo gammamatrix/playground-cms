@@ -4,6 +4,7 @@
  */
 namespace Playground\Cms\Models;
 
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Playground\Models\Model;
 
 /**
@@ -236,4 +237,16 @@ class Snippet extends Model
         'options',
         'sources',
     ];
+
+    /**
+     * Get the revisions of the model.
+     */
+    public function revisions(): HasMany
+    {
+        return $this->hasMany(
+            SnippetRevision::class,
+            'snippet_id',
+            'id'
+        );
+    }
 }

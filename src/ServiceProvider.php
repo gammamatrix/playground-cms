@@ -89,7 +89,7 @@ class ServiceProvider extends AuthServiceProvider
 
         $version = $this->version();
 
-        AboutCommand::add('Playground CMS', fn () => [
+        AboutCommand::add('Playground: CMS', fn () => [
             '<fg=yellow;options=bold>Load</> Migrations' => ! empty($load['migrations']) ? '<fg=green;options=bold>ENABLED</>' : '<fg=yellow;options=bold>DISABLED</>',
             'Package' => $this->package,
             'Version' => $version,

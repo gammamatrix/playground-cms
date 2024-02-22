@@ -15,6 +15,13 @@ class ModelTest extends ModelCase
 
     protected bool $hasRelationships = true;
 
+    /**
+     * @var array<string, array<string, mixed>> Test hasMany relationships.
+     */
+    protected array $hasMany = [
+        'revisions' => ['key' => 'snippet_id', 'modelClass' => \Playground\Cms\Models\SnippetRevision::class],
+    ];
+
     protected array $hasOne = [
         'creator' => [
             'key' => 'created_by_id',
