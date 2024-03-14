@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="1" branch-rate="0" lines-covered="63" lines-valid="63" branches-covered="0" branches-valid="0" complexity="20" version="0.4" timestamp="1709515569">
+<coverage line-rate="1" branch-rate="0" lines-covered="63" lines-valid="63" branches-covered="0" branches-valid="0" complexity="20" version="0.4" timestamp="1710396484">
   <sources>
     <source>/app/src</source>
   </sources>
@@ -11,20 +11,20 @@
           <methods>
             <method name="revisions" signature="" line-rate="1" branch-rate="0" complexity="1">
               <lines>
-                <line number="259" hits="2"/>
-                <line number="260" hits="2"/>
                 <line number="261" hits="2"/>
                 <line number="262" hits="2"/>
                 <line number="263" hits="2"/>
+                <line number="264" hits="2"/>
+                <line number="265" hits="2"/>
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="259" hits="2"/>
-            <line number="260" hits="2"/>
             <line number="261" hits="2"/>
             <line number="262" hits="2"/>
             <line number="263" hits="2"/>
+            <line number="264" hits="2"/>
+            <line number="265" hits="2"/>
           </lines>
         </class>
       </classes>
@@ -35,34 +35,34 @@
           <methods>
             <method name="parent" signature="" line-rate="1" branch-rate="0" complexity="1">
               <lines>
-                <line number="261" hits="2"/>
-                <line number="262" hits="2"/>
                 <line number="263" hits="2"/>
                 <line number="264" hits="2"/>
                 <line number="265" hits="2"/>
+                <line number="266" hits="2"/>
+                <line number="267" hits="2"/>
               </lines>
             </method>
             <method name="page" signature="" line-rate="1" branch-rate="0" complexity="1">
               <lines>
-                <line number="273" hits="2"/>
-                <line number="274" hits="2"/>
                 <line number="275" hits="2"/>
                 <line number="276" hits="2"/>
                 <line number="277" hits="2"/>
+                <line number="278" hits="2"/>
+                <line number="279" hits="2"/>
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="261" hits="2"/>
-            <line number="262" hits="2"/>
             <line number="263" hits="2"/>
             <line number="264" hits="2"/>
             <line number="265" hits="2"/>
-            <line number="273" hits="2"/>
-            <line number="274" hits="2"/>
+            <line number="266" hits="2"/>
+            <line number="267" hits="2"/>
             <line number="275" hits="2"/>
             <line number="276" hits="2"/>
             <line number="277" hits="2"/>
+            <line number="278" hits="2"/>
+            <line number="279" hits="2"/>
           </lines>
         </class>
       </classes>
@@ -73,20 +73,20 @@
           <methods>
             <method name="revisions" signature="" line-rate="1" branch-rate="0" complexity="1">
               <lines>
-                <line number="246" hits="2"/>
-                <line number="247" hits="2"/>
                 <line number="248" hits="2"/>
                 <line number="249" hits="2"/>
                 <line number="250" hits="2"/>
+                <line number="251" hits="2"/>
+                <line number="252" hits="2"/>
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="246" hits="2"/>
-            <line number="247" hits="2"/>
             <line number="248" hits="2"/>
             <line number="249" hits="2"/>
             <line number="250" hits="2"/>
+            <line number="251" hits="2"/>
+            <line number="252" hits="2"/>
           </lines>
         </class>
       </classes>
@@ -97,34 +97,34 @@
           <methods>
             <method name="parent" signature="" line-rate="1" branch-rate="0" complexity="1">
               <lines>
-                <line number="246" hits="2"/>
-                <line number="247" hits="2"/>
                 <line number="248" hits="2"/>
                 <line number="249" hits="2"/>
                 <line number="250" hits="2"/>
+                <line number="251" hits="2"/>
+                <line number="252" hits="2"/>
               </lines>
             </method>
             <method name="snippet" signature="" line-rate="1" branch-rate="0" complexity="1">
               <lines>
-                <line number="258" hits="2"/>
-                <line number="259" hits="2"/>
                 <line number="260" hits="2"/>
                 <line number="261" hits="2"/>
                 <line number="262" hits="2"/>
+                <line number="263" hits="2"/>
+                <line number="264" hits="2"/>
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="246" hits="2"/>
-            <line number="247" hits="2"/>
             <line number="248" hits="2"/>
             <line number="249" hits="2"/>
             <line number="250" hits="2"/>
-            <line number="258" hits="2"/>
-            <line number="259" hits="2"/>
+            <line number="251" hits="2"/>
+            <line number="252" hits="2"/>
             <line number="260" hits="2"/>
             <line number="261" hits="2"/>
             <line number="262" hits="2"/>
+            <line number="263" hits="2"/>
+            <line number="264" hits="2"/>
           </lines>
         </class>
       </classes>
@@ -135,92 +135,92 @@
           <methods>
             <method name="boot" signature="" line-rate="1" branch-rate="0" complexity="5">
               <lines>
-                <line number="30" hits="25"/>
                 <line number="32" hits="25"/>
                 <line number="34" hits="25"/>
                 <line number="36" hits="25"/>
-                <line number="37" hits="25"/>
                 <line number="38" hits="25"/>
-                <line number="41" hits="25"/>
-                <line number="44" hits="25"/>
-                <line number="45" hits="24"/>
-                <line number="50" hits="25"/>
+                <line number="39" hits="25"/>
+                <line number="40" hits="25"/>
+                <line number="43" hits="25"/>
+                <line number="46" hits="25"/>
+                <line number="47" hits="24"/>
+                <line number="52" hits="25"/>
               </lines>
             </method>
             <method name="register" signature="" line-rate="1" branch-rate="0" complexity="1">
               <lines>
-                <line number="58" hits="25"/>
-                <line number="59" hits="25"/>
                 <line number="60" hits="25"/>
                 <line number="61" hits="25"/>
+                <line number="62" hits="25"/>
+                <line number="63" hits="25"/>
               </lines>
             </method>
             <method name="publishMigrations" signature="" line-rate="1" branch-rate="0" complexity="2">
               <lines>
-                <line number="69" hits="25"/>
                 <line number="71" hits="25"/>
-                <line number="72" hits="25"/>
                 <line number="73" hits="25"/>
                 <line number="74" hits="25"/>
                 <line number="75" hits="25"/>
                 <line number="76" hits="25"/>
                 <line number="77" hits="25"/>
-                <line number="80" hits="25"/>
+                <line number="78" hits="25"/>
+                <line number="79" hits="25"/>
+                <line number="82" hits="25"/>
               </lines>
             </method>
             <method name="about" signature="" line-rate="1" branch-rate="0" complexity="5">
               <lines>
-                <line number="85" hits="25"/>
-                <line number="86" hits="25"/>
+                <line number="87" hits="25"/>
                 <line number="88" hits="25"/>
                 <line number="90" hits="25"/>
                 <line number="92" hits="25"/>
-                <line number="93" hits="25"/>
                 <line number="94" hits="25"/>
                 <line number="95" hits="25"/>
                 <line number="96" hits="25"/>
+                <line number="97" hits="25"/>
+                <line number="98" hits="25"/>
               </lines>
             </method>
             <method name="version" signature="" line-rate="1" branch-rate="0" complexity="1">
               <lines>
-                <line number="101" hits="25"/>
+                <line number="103" hits="25"/>
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="30" hits="25"/>
             <line number="32" hits="25"/>
             <line number="34" hits="25"/>
             <line number="36" hits="25"/>
-            <line number="37" hits="25"/>
             <line number="38" hits="25"/>
-            <line number="41" hits="25"/>
-            <line number="44" hits="25"/>
-            <line number="45" hits="24"/>
-            <line number="50" hits="25"/>
-            <line number="58" hits="25"/>
-            <line number="59" hits="25"/>
+            <line number="39" hits="25"/>
+            <line number="40" hits="25"/>
+            <line number="43" hits="25"/>
+            <line number="46" hits="25"/>
+            <line number="47" hits="24"/>
+            <line number="52" hits="25"/>
             <line number="60" hits="25"/>
             <line number="61" hits="25"/>
-            <line number="69" hits="25"/>
+            <line number="62" hits="25"/>
+            <line number="63" hits="25"/>
             <line number="71" hits="25"/>
-            <line number="72" hits="25"/>
             <line number="73" hits="25"/>
             <line number="74" hits="25"/>
             <line number="75" hits="25"/>
             <line number="76" hits="25"/>
             <line number="77" hits="25"/>
-            <line number="80" hits="25"/>
-            <line number="85" hits="25"/>
-            <line number="86" hits="25"/>
+            <line number="78" hits="25"/>
+            <line number="79" hits="25"/>
+            <line number="82" hits="25"/>
+            <line number="87" hits="25"/>
             <line number="88" hits="25"/>
             <line number="90" hits="25"/>
             <line number="92" hits="25"/>
-            <line number="93" hits="25"/>
             <line number="94" hits="25"/>
             <line number="95" hits="25"/>
             <line number="96" hits="25"/>
-            <line number="101" hits="25"/>
+            <line number="97" hits="25"/>
+            <line number="98" hits="25"/>
+            <line number="103" hits="25"/>
           </lines>
         </class>
       </classes>
