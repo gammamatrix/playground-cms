@@ -1,12 +1,14 @@
-# Playground Cms
+# Playground CMS
 
 [![Playground CI Workflow](https://github.com/gammamatrix/playground-cms/actions/workflows/ci.yml/badge.svg?branch=develop)](https://raw.githubusercontent.com/gammamatrix/playground-cms/testing/develop/testdox.txt)
 [![Test Coverage](https://raw.githubusercontent.com/gammamatrix/playground-cms/testing/develop/coverage.svg)](tests)
 [![PHPStan Level 9](https://img.shields.io/badge/PHPStan-level%209-brightgreen)](.github/workflows/ci.yml#L120)
 
-The Playground CMS is a package for [Laravel](https://laravel.com/docs/10.x) applications.
+The Playground CMS is a package for [Laravel](https://laravel.com/docs/11.x) applications.
 
-This application provides the models to use Playground CMS, a Content Management System.
+This application provides the models to use the Playground CMS, a Content Management System.
+
+Read more on using Playground CMS [at the Read the Docs for Playground.](https://gammamatrix-playground.readthedocs.io/)
 
 ## Installation
 

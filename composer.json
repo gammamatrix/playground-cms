@@ -1,13 +1,13 @@
 {
     "name": "gammamatrix/playground-cms",
-    "description": "Playground: Provide the Cms models for a Playground Laravel application.",
+    "description": "Playground: Provide the CMS models for the Playground Content Management System.",
     "keywords": [
         "cms",
         "gammamatrix",
         "laravel",
         "playground"
     ],
-    "homepage": "https://github.com/gammamatrix/playground-cms/wiki",
+    "homepage": "https://gammamatrix-playground.readthedocs.io/",
     "license": "MIT",
     "authors": [
         {
@@ -17,11 +17,11 @@
         }
     ],
     "require": {
-        "php": "^8.1",
-        "gammamatrix/playground": "dev-develop|dev-master|dev-feature/*|^73.0"
+        "php": "^8.2",
+        "gammamatrix/playground": "dev-develop|dev-master|dev-feature/*|^73.0@dev|^73.0"
     },
     "require-dev": {
-        "gammamatrix/playground-test": "dev-develop|dev-master|dev-feature/*|^73.0"
+        "gammamatrix/playground-test": "dev-develop|dev-master|dev-feature/*|^73.0@dev|^73.0"
     },
     "suggest": {
         "gammamatrix/playground-cms-api": "Provides an API, without a UI, to interact with the models provided in this package.",

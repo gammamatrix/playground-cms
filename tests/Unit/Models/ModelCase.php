@@ -1,4 +1,6 @@
 <?php
+
+declare(strict_types=1);
 /**
  * Playground
  */
@@ -28,8 +30,10 @@ class ModelCase extends BaseModelCase
      */
     protected function getEnvironmentSetUp($app)
     {
-        $app['config']->set('auth.providers.users.model', 'Playground\\Models\\User');
+        $app['config']->set('auth.providers.users.model', 'Playground\\Test\\Models\\User');
         $app['config']->set('playground-auth.verify', 'user');
+        $app['config']->set('auth.testing.password', 'password');
+        $app['config']->set('auth.testing.hashed', false);
 
         $app['config']->set('playground-cms.load.migrations', true);
     }
