@@ -8,11 +8,15 @@ The Playground CMS is a package for [Laravel](https://laravel.com/docs/11.x) app
 
 This application provides the models to use the Playground CMS, a Content Management System.
 
-Read more on using Playground CMS [at the Read the Docs for Playground.](https://gammamatrix-playground.readthedocs.io/)
+Read more on using [Playground CMS at Read the Docs: Playground Documentation.](https://gammamatrix-playground.readthedocs.io/en/develop/components/cms.html)
 
 ## Installation
 
-You can install the package via composer:
+**NOTE:** This package is required by:
+- [Playground CMS API](https://github.com/gammamatrix/playground-cms-api): API without UI
+- [Playground CMS Resource](https://github.com/gammamatrix/playground-cms-resource): API with UI
+
+Install this package, with composer, to get access to the CMS Models:
 
 ```bash
 composer require gammamatrix/playground-cms
@@ -37,9 +41,10 @@ php artisan vendor:publish --provider="Playground\Cms\ServiceProvider" --tag="pl
 
 ### Environment Variables
 
-|  env()                              | config()                            |
-|-------------------------------------|-------------------------------------|
-| `PLAYGROUND_CMS_LOAD_MIGRATIONS` | `playground-cms.load.migrations` |
+|  env()                           | config()                         | Default |
+|----------------------------------|----------------------------------|---------|
+| `PLAYGROUND_CMS_ABOUT`           | `playground-cms.about`           | `true`  |
+| `PLAYGROUND_CMS_LOAD_MIGRATIONS` | `playground-cms.load.migrations` | `false` |
 - The loading option for migrations does not take effect if the migrations have been exported to your app. The control for loading is handled in the package [ServiceProvider.](src/ServiceProvider.php)
 
 ## Models
@@ -55,7 +60,7 @@ This package includes [factories](database/factories), models and [migrations](d
 All migrations are disabled by default.
 
 See the contents of the published config file: [database/migrations](database/migrations)
-- NOTE: There are 15 tables that will be created, they do have indexes and unique constraints defined; however, this release does not have the foreign key constraint migrations included at this time.
+- NOTE: There are 4 tables that will be created, they do have indexes and unique constraints defined; however, this release does not have the foreign key constraint migrations included at this time.
 
 You can publish the migrations file with:
 ```bash

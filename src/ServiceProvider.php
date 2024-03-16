@@ -49,7 +49,9 @@ class ServiceProvider extends AuthServiceProvider
             }
         }
 
-        $this->about();
+        if (! empty($config['about'])) {
+            $this->about();
+        }
     }
 
     /**
