@@ -11,6 +11,91 @@ use Playground\Models\Model;
 
 /**
  * \Playground\Cms\Models\SnippetRevision
+ *
+ * @property string $id
+ * @property ?string $created_by_id
+ * @property ?string $modified_by_id
+ * @property ?string $owned_by_id
+ * @property ?string $parent_id
+ * @property ?string $snippet_id
+ * @property string $snippet_type
+ * @property ?Carbon $created_at
+ * @property ?Carbon $updated_at
+ * @property ?Carbon $deleted_at
+ * @property ?Carbon $start_at
+ * @property ?Carbon $planned_start_at
+ * @property ?Carbon $end_at
+ * @property ?Carbon $planned_end_at
+ * @property ?Carbon $canceled_at
+ * @property ?Carbon $closed_at
+ * @property ?Carbon $embargo_at
+ * @property ?Carbon $fixed_at
+ * @property ?Carbon $postponed_at
+ * @property ?Carbon $published_at
+ * @property ?Carbon $released_at
+ * @property ?Carbon $resumed_at
+ * @property ?Carbon $resolved_at
+ * @property ?Carbon $suspended_at
+ * @property int $gids
+ * @property int $po
+ * @property int $pg
+ * @property int $pw
+ * @property bool $only_admin
+ * @property bool $only_user
+ * @property bool $only_guest
+ * @property bool $allow_public
+ * @property int $status
+ * @property int $rank
+ * @property int $size
+ * @property int $revision
+ * @property string $matrix
+ * @property ?int $x
+ * @property ?int $y
+ * @property ?int $z
+ * @property ?double $r
+ * @property ?double $theta
+ * @property ?double $rho
+ * @property ?double $phi
+ * @property ?double $elevation
+ * @property ?double $latitude
+ * @property ?double $longitude
+ * @property bool $active
+ * @property bool $canceled
+ * @property bool $closed
+ * @property bool $completed
+ * @property bool $fixed
+ * @property bool $flagged
+ * @property bool $internal
+ * @property bool $locked
+ * @property bool $pending
+ * @property bool $planned
+ * @property bool $problem
+ * @property bool $published
+ * @property bool $released
+ * @property bool $retired
+ * @property bool $resolved
+ * @property bool $sitemap
+ * @property bool $suspended
+ * @property string $route
+ * @property string $label
+ * @property string $title
+ * @property string $byline
+ * @property string $timezone
+ * @property string $slug
+ * @property string $url
+ * @property string $description
+ * @property string $introduction
+ * @property string $content
+ * @property string $summary
+ * @property string $icon
+ * @property string $image
+ * @property string $avatar
+ * @property array $ui
+ * @property array $assets
+ * @property array $meta
+ * @property array $notes
+ * @property array $options
+ * @property array $sources
  */
 class SnippetRevision extends Model
 {
@@ -56,6 +141,17 @@ class SnippetRevision extends Model
         'rank' => 0,
         'size' => 0,
         'revision' => 0,
+        'matrix' => '',
+        'x' => null,
+        'y' => null,
+        'z' => null,
+        'r' => null,
+        'theta' => null,
+        'rho' => null,
+        'phi' => null,
+        'elevation' => null,
+        'latitude' => null,
+        'longitude' => null,
         'active' => true,
         'canceled' => false,
         'closed' => false,
@@ -95,80 +191,6 @@ class SnippetRevision extends Model
     ];
 
     /**
-     * The attributes that should be cast.
-     *
-     * @var array<string, string>
-     */
-    protected $casts = [
-        'created_at' => 'datetime',
-        'updated_at' => 'datetime',
-        'deleted_at' => 'datetime',
-        'start_at' => 'datetime',
-        'planned_start_at' => 'datetime',
-        'end_at' => 'datetime',
-        'planned_end_at' => 'datetime',
-        'canceled_at' => 'datetime',
-        'closed_at' => 'datetime',
-        'embargo_at' => 'datetime',
-        'fixed_at' => 'datetime',
-        'postponed_at' => 'datetime',
-        'published_at' => 'datetime',
-        'released_at' => 'datetime',
-        'resumed_at' => 'datetime',
-        'resolved_at' => 'datetime',
-        'suspended_at' => 'datetime',
-        'gids' => 'integer',
-        'po' => 'integer',
-        'pg' => 'integer',
-        'pw' => 'integer',
-        'only_admin' => 'boolean',
-        'only_user' => 'boolean',
-        'only_guest' => 'boolean',
-        'allow_public' => 'boolean',
-        'status' => 'integer',
-        'rank' => 'integer',
-        'size' => 'integer',
-        'revision' => 'integer',
-        'active' => 'boolean',
-        'canceled' => 'boolean',
-        'closed' => 'boolean',
-        'completed' => 'boolean',
-        'duplicate' => 'boolean',
-        'fixed' => 'boolean',
-        'flagged' => 'boolean',
-        'internal' => 'boolean',
-        'locked' => 'boolean',
-        'pending' => 'boolean',
-        'planned' => 'boolean',
-        'problem' => 'boolean',
-        'published' => 'boolean',
-        'released' => 'boolean',
-        'retired' => 'boolean',
-        'resolved' => 'boolean',
-        'sitemap' => 'boolean',
-        'suspended' => 'boolean',
-        'unknown' => 'boolean',
-        'label' => 'string',
-        'title' => 'string',
-        'byline' => 'string',
-        'slug' => 'string',
-        'url' => 'string',
-        'description' => 'string',
-        'introduction' => 'string',
-        'content' => 'string',
-        'summary' => 'string',
-        'icon' => 'string',
-        'image' => 'string',
-        'avatar' => 'string',
-        'ui' => 'array',
-        'assets' => 'array',
-        'meta' => 'array',
-        'notes' => 'array',
-        'options' => 'array',
-        'sources' => 'array',
-    ];
-
-    /**
      * The attributes that are mass assignable.
      *
      * @var array<int, string>
@@ -202,6 +224,17 @@ class SnippetRevision extends Model
         'status',
         'rank',
         'size',
+        'matrix',
+        'x',
+        'y',
+        'z',
+        'r',
+        'theta',
+        'rho',
+        'phi',
+        'elevation',
+        'latitude',
+        'longitude',
         'active',
         'canceled',
         'closed',
@@ -239,6 +272,94 @@ class SnippetRevision extends Model
         'options',
         'sources',
     ];
+
+    /**
+     * Get the attributes that should be cast.
+     *
+     * @return array<string, string>
+     */
+    protected function casts(): array
+    {
+        return [
+            'created_at' => 'datetime',
+            'updated_at' => 'datetime',
+            'deleted_at' => 'datetime',
+            'start_at' => 'datetime',
+            'planned_start_at' => 'datetime',
+            'end_at' => 'datetime',
+            'planned_end_at' => 'datetime',
+            'canceled_at' => 'datetime',
+            'closed_at' => 'datetime',
+            'embargo_at' => 'datetime',
+            'fixed_at' => 'datetime',
+            'postponed_at' => 'datetime',
+            'published_at' => 'datetime',
+            'released_at' => 'datetime',
+            'resumed_at' => 'datetime',
+            'resolved_at' => 'datetime',
+            'suspended_at' => 'datetime',
+            'gids' => 'integer',
+            'po' => 'integer',
+            'pg' => 'integer',
+            'pw' => 'integer',
+            'only_admin' => 'boolean',
+            'only_user' => 'boolean',
+            'only_guest' => 'boolean',
+            'allow_public' => 'boolean',
+            'status' => 'integer',
+            'rank' => 'integer',
+            'size' => 'integer',
+            'revision' => 'integer',
+            'matrix' => 'string',
+            'x' => 'integer',
+            'y' => 'integer',
+            'z' => 'integer',
+            'r' => 'float',
+            'theta' => 'float',
+            'rho' => 'float',
+            'phi' => 'float',
+            'elevation' => 'float',
+            'latitude' => 'float',
+            'longitude' => 'float',
+            'active' => 'boolean',
+            'canceled' => 'boolean',
+            'closed' => 'boolean',
+            'completed' => 'boolean',
+            'duplicate' => 'boolean',
+            'fixed' => 'boolean',
+            'flagged' => 'boolean',
+            'internal' => 'boolean',
+            'locked' => 'boolean',
+            'pending' => 'boolean',
+            'planned' => 'boolean',
+            'problem' => 'boolean',
+            'published' => 'boolean',
+            'released' => 'boolean',
+            'retired' => 'boolean',
+            'resolved' => 'boolean',
+            'sitemap' => 'boolean',
+            'suspended' => 'boolean',
+            'unknown' => 'boolean',
+            'label' => 'string',
+            'title' => 'string',
+            'byline' => 'string',
+            'slug' => 'string',
+            'url' => 'string',
+            'description' => 'string',
+            'introduction' => 'string',
+            'content' => 'string',
+            'summary' => 'string',
+            'icon' => 'string',
+            'image' => 'string',
+            'avatar' => 'string',
+            'ui' => 'array',
+            'assets' => 'array',
+            'meta' => 'array',
+            'notes' => 'array',
+            'options' => 'array',
+            'sources' => 'array',
+        ];
+    }
 
     /**
      * Access the parent of the revisioned model.
