@@ -1,22 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <crap_result>
   <project/>
-  <timestamp>2024-03-14 06:08:04</timestamp>
+  <timestamp>2024-03-17 00:01:24</timestamp>
   <stats>
     <name>Method Crap Stats</name>
-    <methodCount>11</methodCount>
+    <methodCount>15</methodCount>
     <crapMethodCount>0</crapMethodCount>
     <crapLoad>0</crapLoad>
-    <totalCrap>20</totalCrap>
+    <totalCrap>25</totalCrap>
     <crapMethodPercent>0</crapMethodPercent>
   </stats>
   <methods>
     <method>
       <package>Playground\Cms\Models</package>
       <className>Playground\Cms\Models\Page</className>
+      <methodName>casts</methodName>
+      <methodSignature>casts(): array</methodSignature>
+      <fullMethod>casts(): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Models</package>
+      <className>Playground\Cms\Models\Page</className>
       <methodName>revisions</methodName>
       <methodSignature>revisions(): Illuminate\Database\Eloquent\Relations\HasMany</methodSignature>
       <fullMethod>revisions(): Illuminate\Database\Eloquent\Relations\HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Models</package>
+      <className>Playground\Cms\Models\PageRevision</className>
+      <methodName>casts</methodName>
+      <methodSignature>casts(): array</methodSignature>
+      <fullMethod>casts(): array</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -47,9 +69,31 @@
     <method>
       <package>Playground\Cms\Models</package>
       <className>Playground\Cms\Models\Snippet</className>
+      <methodName>casts</methodName>
+      <methodSignature>casts(): array</methodSignature>
+      <fullMethod>casts(): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Models</package>
+      <className>Playground\Cms\Models\Snippet</className>
       <methodName>revisions</methodName>
       <methodSignature>revisions(): Illuminate\Database\Eloquent\Relations\HasMany</methodSignature>
       <fullMethod>revisions(): Illuminate\Database\Eloquent\Relations\HasMany</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Models</package>
+      <className>Playground\Cms\Models\SnippetRevision</className>
+      <methodName>casts</methodName>
+      <methodSignature>casts(): array</methodSignature>
+      <fullMethod>casts(): array</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -83,8 +127,8 @@
       <methodName>boot</methodName>
       <methodSignature>boot()</methodSignature>
       <fullMethod>boot()</fullMethod>
-      <crap>5</crap>
-      <complexity>5</complexity>
+      <crap>6</crap>
+      <complexity>6</complexity>
       <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
