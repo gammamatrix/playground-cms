@@ -13,9 +13,9 @@ use Playground\Models\Model;
  * \Playground\Cms\Models\PageRevision
  *
  * @property string $id
- * @property ?string $created_by_id
- * @property ?string $modified_by_id
- * @property ?string $owned_by_id
+ * @property ?scalar $created_by_id
+ * @property ?scalar $modified_by_id
+ * @property ?scalar $owned_by_id
  * @property ?string $parent_id
  * @property ?string $page_id
  * @property string $page_type
