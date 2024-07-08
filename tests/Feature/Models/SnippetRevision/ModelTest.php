@@ -33,11 +33,6 @@ class ModelTest extends ModelCase
             'rule' => 'create',
             'modelClass' => \Playground\Models\User::class,
         ],
-        'parent' => [
-            'key' => 'parent_id',
-            'rule' => 'create',
-            'modelClass' => \Playground\Cms\Models\Snippet::class,
-        ],
         'snippet' => [
             'key' => 'snippet_id',
             'rule' => 'create',

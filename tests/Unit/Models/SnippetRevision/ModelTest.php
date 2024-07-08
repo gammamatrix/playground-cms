@@ -21,7 +21,6 @@ class ModelTest extends ModelCase
         'creator',
         'modifier',
         'owner',
-        'parent',
         'snippet',
     ];
 }
