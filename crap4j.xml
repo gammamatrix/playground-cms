@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <crap_result>
   <project/>
-  <timestamp>2024-03-22 20:48:13</timestamp>
+  <timestamp>2024-07-08 22:51:40</timestamp>
   <stats>
     <name>Method Crap Stats</name>
-    <methodCount>15</methodCount>
+    <methodCount>12</methodCount>
     <crapMethodCount>0</crapMethodCount>
     <crapLoad>0</crapLoad>
-    <totalCrap>25</totalCrap>
+    <totalCrap>22</totalCrap>
     <crapMethodPercent>0</crapMethodPercent>
   </stats>
   <methods>
@@ -39,17 +39,6 @@
       <methodName>casts</methodName>
       <methodSignature>casts(): array</methodSignature>
       <fullMethod>casts(): array</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Cms\Models</package>
-      <className>Playground\Cms\Models\PageRevision</className>
-      <methodName>parent</methodName>
-      <methodSignature>parent(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>parent(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -94,17 +83,6 @@
       <methodName>casts</methodName>
       <methodSignature>casts(): array</methodSignature>
       <fullMethod>casts(): array</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Cms\Models</package>
-      <className>Playground\Cms\Models\SnippetRevision</className>
-      <methodName>parent</methodName>
-      <methodSignature>parent(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>parent(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -162,17 +140,6 @@
       <fullMethod>about(): void</fullMethod>
       <crap>5</crap>
       <complexity>5</complexity>
-      <coverage>100</coverage>
-      <crapLoad>0</crapLoad>
-    </method>
-    <method>
-      <package>Playground\Cms</package>
-      <className>Playground\Cms\ServiceProvider</className>
-      <methodName>version</methodName>
-      <methodSignature>version(): string</methodSignature>
-      <fullMethod>version(): string</fullMethod>
-      <crap>1</crap>
-      <complexity>1</complexity>
       <coverage>100</coverage>
       <crapLoad>0</crapLoad>
     </method>
