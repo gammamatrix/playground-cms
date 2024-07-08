@@ -44,6 +44,9 @@ class SnippetFactory extends Factory
         ];
     }
 
+    /**
+     * @return Factory<Snippet>
+     */
     public function locked(): Factory
     {
         return $this->state(fn (array $attributes) => [
@@ -51,6 +54,9 @@ class SnippetFactory extends Factory
         ]);
     }
 
+    /**
+     * @return Factory<Snippet>
+     */
     public function published(): Factory
     {
         return $this->state(fn (array $attributes) => [

@@ -8,21 +8,25 @@ namespace Tests\Feature\Playground\Cms\Console\Commands\About;
 
 use PHPUnit\Framework\Attributes\CoversClass;
 use Playground\Cms\ServiceProvider;
-use Playground\ServiceProvider as PlaygroundServiceProvider;
-use Playground\Test\OrchestraTestCase;
+use Tests\Feature\Playground\Cms\TestCase;
 
 /**
  * \Tests\Feature\Playground\Cms\Console\Commands\About
  */
 #[CoversClass(ServiceProvider::class)]
-class CommandTest extends OrchestraTestCase
+class CommandTest extends TestCase
 {
-    protected function getPackageProviders($app)
+    /**
+     * Define environment setup.
+     *
+     * @param  \Illuminate\Foundation\Application  $app
+     * @return void
+     */
+    protected function defineEnvironment($app)
     {
-        return [
-            PlaygroundServiceProvider::class,
-            ServiceProvider::class,
-        ];
+        parent::defineEnvironment($app);
+
+        $app['config']->set('playground-cms.load.migrations', true);
     }
 
     public function test_command_about_displays_package_information_and_succeed_with_code_0(): void

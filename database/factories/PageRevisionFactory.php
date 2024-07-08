@@ -44,6 +44,9 @@ class PageRevisionFactory extends Factory
         ];
     }
 
+    /**
+     * @return Factory<PageRevision>
+     */
     public function locked(): Factory
     {
         return $this->state(fn (array $attributes) => [
@@ -51,6 +54,9 @@ class PageRevisionFactory extends Factory
         ]);
     }
 
+    /**
+     * @return Factory<PageRevision>
+     */
     public function published(): Factory
     {
         return $this->state(fn (array $attributes) => [

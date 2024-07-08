@@ -1,9 +1,9 @@
 <?php
-
-declare(strict_types=1);
 /**
  * Playground
  */
+
+declare(strict_types=1);
 namespace Playground\Cms\Models;
 
 use Illuminate\Database\Eloquent\Relations\HasMany;
@@ -362,6 +362,8 @@ class Snippet extends Model
 
     /**
      * Get the revisions of the model.
+     *
+     * @return HasMany<SnippetRevision>
      */
     public function revisions(): HasMany
     {

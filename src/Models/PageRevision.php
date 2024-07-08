@@ -1,9 +1,9 @@
 <?php
-
-declare(strict_types=1);
 /**
  * Playground
  */
+
+declare(strict_types=1);
 namespace Playground\Cms\Models;
 
 use Illuminate\Database\Eloquent\Relations\HasOne;
@@ -383,19 +383,9 @@ class PageRevision extends Model
     }
 
     /**
-     * Access the parent of the revisioned model.
-     */
-    public function parent(): HasOne
-    {
-        return $this->hasOne(
-            Page::class,
-            'id',
-            'parent_id'
-        );
-    }
-
-    /**
      * The page of the revision.
+     *
+     * @return HasOne<Page>
      */
     public function page(): HasOne
     {
