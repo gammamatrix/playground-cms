@@ -61,22 +61,19 @@ class ServiceProvider extends AuthServiceProvider
     {
         $this->mergeConfigFrom(
             dirname(__DIR__).'/config/playground-cms.php',
-            'playground-cms'
+            $this->package
         );
     }
 
-    /**
-     * Register any application services.
-     */
     public function publishMigrations(): void
     {
         $migrations = [];
 
         foreach ([
-            '2010_09_30_000000_create_cms_page_revisions_table.php',
             '2010_09_30_000000_create_cms_pages_table.php',
-            '2010_09_30_000000_create_cms_snippet_revisions_table.php',
+            '2010_09_30_000000_create_cms_page_revisions_table.php',
             '2010_09_30_000000_create_cms_snippets_table.php',
+            '2010_09_30_000000_create_cms_snippet_revisions_table.php',
         ] as $file) {
             $migrations[dirname(__DIR__).'/database/migrations/'.$file] = database_path('migrations/'.$file);
         }

@@ -6,7 +6,7 @@
 declare(strict_types=1);
 
 /**
- * Playground: Cms Configuration and Environment Variables
+ * Playground: CMS Configuration and Environment Variables
  */
 return [
 

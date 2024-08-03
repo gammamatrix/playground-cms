@@ -1742,7 +1742,7 @@
         }
     ],
     "create": {
-        "migration": "2024_08_03_000000_create_cms_pages_table",
+        "migration": "2010_09_30_000000_create_cms_pages_table",
         "primary": "uuid",
         "timestamps": true,
         "softDeletes": true,

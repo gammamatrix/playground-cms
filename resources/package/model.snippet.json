@@ -1616,7 +1616,7 @@
         }
     ],
     "create": {
-        "migration": "2024_08_03_000000_create_cms_snippets_table",
+        "migration": "2010_09_30_000000_create_cms_snippets_table",
         "primary": "uuid",
         "timestamps": true,
         "softDeletes": true,

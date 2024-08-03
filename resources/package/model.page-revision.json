@@ -1759,7 +1759,7 @@
         }
     ],
     "create": {
-        "migration": "2024_08_03_000000_create_cms_page_revisions_table",
+        "migration": "2010_09_30_000000_create_cms_page_revisions_table",
         "primary": "uuid",
         "timestamps": true,
         "softDeletes": true,
