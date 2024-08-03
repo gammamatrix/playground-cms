@@ -1,9 +1,9 @@
 <?php
-
-declare(strict_types=1);
 /**
  * Playground
  */
+
+declare(strict_types=1);
 namespace Database\Factories\Playground\Cms\Models;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -43,6 +43,8 @@ class SnippetFactory extends Factory
             'summary' => $this->faker->sentence(3),
         ];
     }
+
+    // States: flags
 
     /**
      * @return Factory<Snippet>

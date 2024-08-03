@@ -11,7 +11,7 @@ use Playground\Cms\ServiceProvider;
 use Tests\Feature\Playground\Cms\TestCase;
 
 /**
- * \Tests\Feature\Playground\Cms\Console\Commands\About
+ * \Tests\Feature\Playground\Cms\Console\Commands\About\CommandTest
  */
 #[CoversClass(ServiceProvider::class)]
 class CommandTest extends TestCase
