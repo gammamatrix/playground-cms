@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="1" branch-rate="0" lines-covered="394" lines-valid="394" branches-covered="0" branches-valid="0" complexity="22" version="0.4" timestamp="1722711881">
+<coverage line-rate="1" branch-rate="0" lines-covered="394" lines-valid="394" branches-covered="0" branches-valid="0" complexity="22" version="0.4" timestamp="1722714505">
   <sources>
     <source>/app/src</source>
   </sources>
@@ -830,27 +830,27 @@
             </method>
             <method name="publishMigrations" signature="" line-rate="1" branch-rate="0" complexity="2">
               <lines>
+                <line number="70" hits="25"/>
+                <line number="72" hits="25"/>
                 <line number="73" hits="25"/>
+                <line number="74" hits="25"/>
                 <line number="75" hits="25"/>
                 <line number="76" hits="25"/>
                 <line number="77" hits="25"/>
                 <line number="78" hits="25"/>
-                <line number="79" hits="25"/>
-                <line number="80" hits="25"/>
                 <line number="81" hits="25"/>
-                <line number="84" hits="25"/>
               </lines>
             </method>
             <method name="about" signature="" line-rate="1" branch-rate="0" complexity="5">
               <lines>
+                <line number="86" hits="25"/>
+                <line number="87" hits="25"/>
                 <line number="89" hits="25"/>
-                <line number="90" hits="25"/>
+                <line number="91" hits="25"/>
                 <line number="92" hits="25"/>
+                <line number="93" hits="25"/>
                 <line number="94" hits="25"/>
                 <line number="95" hits="25"/>
-                <line number="96" hits="25"/>
-                <line number="97" hits="25"/>
-                <line number="98" hits="25"/>
               </lines>
             </method>
           </methods>
@@ -870,23 +870,23 @@
             <line number="63" hits="25"/>
             <line number="64" hits="25"/>
             <line number="65" hits="25"/>
+            <line number="70" hits="25"/>
+            <line number="72" hits="25"/>
             <line number="73" hits="25"/>
+            <line number="74" hits="25"/>
             <line number="75" hits="25"/>
             <line number="76" hits="25"/>
             <line number="77" hits="25"/>
             <line number="78" hits="25"/>
-            <line number="79" hits="25"/>
-            <line number="80" hits="25"/>
             <line number="81" hits="25"/>
-            <line number="84" hits="25"/>
+            <line number="86" hits="25"/>
+            <line number="87" hits="25"/>
             <line number="89" hits="25"/>
-            <line number="90" hits="25"/>
+            <line number="91" hits="25"/>
             <line number="92" hits="25"/>
+            <line number="93" hits="25"/>
             <line number="94" hits="25"/>
             <line number="95" hits="25"/>
-            <line number="96" hits="25"/>
-            <line number="97" hits="25"/>
-            <line number="98" hits="25"/>
           </lines>
         </class>
       </classes>
