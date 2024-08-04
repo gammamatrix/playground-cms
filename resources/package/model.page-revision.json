@@ -331,6 +331,14 @@
                 "type": "string"
             },
             {
+                "column": "page_type",
+                "label": "Page Type",
+                "icon": "",
+                "nullable": true,
+                "unsigned": true,
+                "type": "string"
+            },
+            {
                 "column": "created_by_id",
                 "label": "Created by id",
                 "icon": "",
@@ -380,14 +388,6 @@
             }
         ],
         "dates": [
-            {
-                "column": "page_type",
-                "label": "PageRevision Type",
-                "icon": "",
-                "nullable": true,
-                "unsigned": true,
-                "type": "string"
-            },
             {
                 "column": "created_at",
                 "label": "Created at",
@@ -1108,7 +1108,7 @@
         },
         {
             "column": "page_type",
-            "label": "PageRevision Type",
+            "label": "Page Type",
             "icon": "",
             "nullable": false,
             "type": "string"
@@ -1771,7 +1771,7 @@
         "ids": {
             "page_type": {
                 "column": "page_type",
-                "label": "PageRevision Type",
+                "label": "Page Type",
                 "description": "",
                 "foreign": null,
                 "icon": "",

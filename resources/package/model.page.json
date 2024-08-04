@@ -329,6 +329,14 @@
                 "type": "string"
             },
             {
+                "column": "page_type",
+                "label": "Page Type",
+                "icon": "",
+                "nullable": true,
+                "unsigned": true,
+                "type": "string"
+            },
+            {
                 "column": "created_by_id",
                 "label": "Created by id",
                 "icon": "",
@@ -370,14 +378,6 @@
             }
         ],
         "dates": [
-            {
-                "column": "page_type",
-                "label": "Page Type",
-                "icon": "",
-                "nullable": true,
-                "unsigned": true,
-                "type": "string"
-            },
             {
                 "column": "created_at",
                 "label": "Created at",
