@@ -7,7 +7,7 @@
         "laravel",
         "playground"
     ],
-    "homepage": "https://gammamatrix-playground.readthedocs.io/en/develop/components/cms.html",
+    "homepage": "https://github.com/gammamatrix/playground-cms",
     "license": "MIT",
     "authors": [
         {
@@ -27,8 +27,6 @@
         "gammamatrix/playground-cms-api": "Provides an API, without a UI, to interact with the models provided in this package.",
         "gammamatrix/playground-cms-resource": "Provides a resource API and optional Blade UI to interact with the models provided in this package."
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "autoload": {
         "psr-4": {
             "Database\\Factories\\Playground\\Cms\\Models\\": "database/factories/",
@@ -50,8 +48,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-develop": "73.x-dev",
-            "dev-master": "73.x-dev"
+            "dev-develop": "73.x-dev"
         },
         "laravel": {
             "providers": [
@@ -59,10 +56,12 @@
             ]
         }
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "scripts": {
         "analyse": "vendor/bin/phpstan analyse --verbose --debug --level max",
-        "cloc": "cloc --exclude-dir=output,vendor .",
+        "cloc": "cloc --exclude-dir=node_modules,output,vendor .",
         "format": "vendor/bin/php-cs-fixer fix",
-        "test": "vendor/bin/phpunit"
+        "test": "vendor/bin/testbench package:test"
     }
 }

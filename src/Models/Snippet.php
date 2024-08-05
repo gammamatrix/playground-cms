@@ -13,28 +13,29 @@ use Playground\Models\Model;
  * \Playground\Cms\Models\Snippet
  *
  * @property string $id
+ * @property ?string $snippet_type
  * @property ?scalar $created_by_id
  * @property ?scalar $modified_by_id
  * @property ?scalar $owned_by_id
  * @property ?string $parent_id
- * @property string $snippet_type
+ * @property ?string $matrix_id
  * @property ?Carbon $created_at
  * @property ?Carbon $updated_at
  * @property ?Carbon $deleted_at
- * @property ?Carbon $start_at
- * @property ?Carbon $planned_start_at
- * @property ?Carbon $end_at
- * @property ?Carbon $planned_end_at
  * @property ?Carbon $canceled_at
  * @property ?Carbon $closed_at
  * @property ?Carbon $embargo_at
  * @property ?Carbon $fixed_at
+ * @property ?Carbon $planned_end_at
+ * @property ?Carbon $planned_start_at
  * @property ?Carbon $postponed_at
  * @property ?Carbon $published_at
  * @property ?Carbon $released_at
  * @property ?Carbon $resumed_at
  * @property ?Carbon $resolved_at
  * @property ?Carbon $suspended_at
+ * @property ?Carbon $timer_end_at
+ * @property ?Carbon $timer_start_at
  * @property int $gids
  * @property int $po
  * @property int $pg
@@ -47,7 +48,7 @@ use Playground\Models\Model;
  * @property int $rank
  * @property int $size
  * @property int $revision
- * @property string $matrix
+ * @property ?array $matrix
  * @property ?int $x
  * @property ?int $y
  * @property ?int $z
@@ -62,39 +63,41 @@ use Playground\Models\Model;
  * @property bool $canceled
  * @property bool $closed
  * @property bool $completed
+ * @property bool $cron
+ * @property bool $duplicate
  * @property bool $fixed
  * @property bool $flagged
  * @property bool $internal
  * @property bool $locked
  * @property bool $pending
  * @property bool $planned
+ * @property bool $prioritized
  * @property bool $problem
  * @property bool $published
  * @property bool $released
- * @property bool $retired
  * @property bool $resolved
- * @property bool $sitemap
+ * @property bool $retired
  * @property bool $suspended
- * @property string $route
+ * @property bool $unknown
+ * @property string $locale
  * @property string $label
  * @property string $title
  * @property string $byline
- * @property string $timezone
- * @property string $slug
+ * @property ?string $slug
  * @property string $url
  * @property string $description
  * @property string $introduction
- * @property string $content
- * @property string $summary
+ * @property ?string $content
+ * @property ?string $summary
  * @property string $icon
  * @property string $image
  * @property string $avatar
- * @property array $ui
- * @property array $assets
- * @property array $meta
- * @property array $notes
- * @property array $options
- * @property array $sources
+ * @property ?array $ui
+ * @property ?array $assets
+ * @property ?array $meta
+ * @property ?array $notes
+ * @property ?array $options
+ * @property ?array $sources
  */
 class Snippet extends Model
 {
@@ -106,28 +109,29 @@ class Snippet extends Model
      * @var array<string, mixed>
      */
     protected $attributes = [
+        'snippet_type' => null,
         'created_by_id' => null,
         'modified_by_id' => null,
         'owned_by_id' => null,
         'parent_id' => null,
-        'snippet_type' => null,
+        'matrix_id' => null,
         'created_at' => null,
         'updated_at' => null,
         'deleted_at' => null,
-        'start_at' => null,
-        'planned_start_at' => null,
-        'end_at' => null,
-        'planned_end_at' => null,
         'canceled_at' => null,
         'closed_at' => null,
         'embargo_at' => null,
         'fixed_at' => null,
+        'planned_end_at' => null,
+        'planned_start_at' => null,
         'postponed_at' => null,
         'published_at' => null,
         'released_at' => null,
         'resumed_at' => null,
         'resolved_at' => null,
         'suspended_at' => null,
+        'timer_end_at' => null,
+        'timer_start_at' => null,
         'gids' => 0,
         'po' => 0,
         'pg' => 0,
@@ -139,8 +143,8 @@ class Snippet extends Model
         'status' => 0,
         'rank' => 0,
         'size' => 0,
-        'revision' => 0,
-        'matrix' => '',
+        'revision' => false,
+        'matrix' => '{}',
         'x' => null,
         'y' => null,
         'z' => null,
@@ -155,20 +159,23 @@ class Snippet extends Model
         'canceled' => false,
         'closed' => false,
         'completed' => false,
+        'cron' => false,
+        'duplicate' => false,
         'fixed' => false,
         'flagged' => false,
         'internal' => false,
         'locked' => false,
         'pending' => false,
         'planned' => false,
+        'prioritized' => false,
         'problem' => false,
         'published' => false,
         'released' => false,
-        'retired' => false,
         'resolved' => false,
-        'sitemap' => false,
+        'retired' => false,
         'suspended' => false,
         'unknown' => false,
+        'locale' => '',
         'label' => '',
         'title' => '',
         'byline' => '',
@@ -195,23 +202,24 @@ class Snippet extends Model
      * @var array<int, string>
      */
     protected $fillable = [
+        'snippet_type',
         'owned_by_id',
         'parent_id',
-        'snippet_type',
-        'start_at',
-        'planned_start_at',
-        'end_at',
-        'planned_end_at',
+        'matrix_id',
         'canceled_at',
         'closed_at',
         'embargo_at',
         'fixed_at',
+        'planned_end_at',
+        'planned_start_at',
         'postponed_at',
         'published_at',
         'released_at',
         'resumed_at',
         'resolved_at',
         'suspended_at',
+        'timer_end_at',
+        'timer_start_at',
         'gids',
         'po',
         'pg',
@@ -238,6 +246,7 @@ class Snippet extends Model
         'canceled',
         'closed',
         'completed',
+        'cron',
         'duplicate',
         'fixed',
         'flagged',
@@ -245,14 +254,15 @@ class Snippet extends Model
         'locked',
         'pending',
         'planned',
+        'prioritized',
         'problem',
         'published',
         'released',
-        'retired',
         'resolved',
-        'sitemap',
+        'retired',
         'suspended',
         'unknown',
+        'locale',
         'label',
         'title',
         'byline',
@@ -280,23 +290,24 @@ class Snippet extends Model
     protected function casts(): array
     {
         return [
+            'snippet_type' => 'string',
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
             'deleted_at' => 'datetime',
-            'start_at' => 'datetime',
-            'planned_start_at' => 'datetime',
-            'end_at' => 'datetime',
-            'planned_end_at' => 'datetime',
             'canceled_at' => 'datetime',
             'closed_at' => 'datetime',
             'embargo_at' => 'datetime',
             'fixed_at' => 'datetime',
+            'planned_end_at' => 'datetime',
+            'planned_start_at' => 'datetime',
             'postponed_at' => 'datetime',
             'published_at' => 'datetime',
             'released_at' => 'datetime',
             'resumed_at' => 'datetime',
             'resolved_at' => 'datetime',
             'suspended_at' => 'datetime',
+            'timer_end_at' => 'datetime',
+            'timer_start_at' => 'datetime',
             'gids' => 'integer',
             'po' => 'integer',
             'pg' => 'integer',
@@ -309,7 +320,7 @@ class Snippet extends Model
             'rank' => 'integer',
             'size' => 'integer',
             'revision' => 'integer',
-            'matrix' => 'string',
+            'matrix' => 'array',
             'x' => 'integer',
             'y' => 'integer',
             'z' => 'integer',
@@ -324,6 +335,7 @@ class Snippet extends Model
             'canceled' => 'boolean',
             'closed' => 'boolean',
             'completed' => 'boolean',
+            'cron' => 'boolean',
             'duplicate' => 'boolean',
             'fixed' => 'boolean',
             'flagged' => 'boolean',
@@ -331,14 +343,15 @@ class Snippet extends Model
             'locked' => 'boolean',
             'pending' => 'boolean',
             'planned' => 'boolean',
+            'prioritized' => 'boolean',
             'problem' => 'boolean',
             'published' => 'boolean',
             'released' => 'boolean',
-            'retired' => 'boolean',
             'resolved' => 'boolean',
-            'sitemap' => 'boolean',
+            'retired' => 'boolean',
             'suspended' => 'boolean',
             'unknown' => 'boolean',
+            'locale' => 'string',
             'label' => 'string',
             'title' => 'string',
             'byline' => 'string',
@@ -361,7 +374,7 @@ class Snippet extends Model
     }
 
     /**
-     * Get the revisions of the model.
+     * The revisions of the snippet.
      *
      * @return HasMany<SnippetRevision>
      */

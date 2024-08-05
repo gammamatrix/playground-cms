@@ -1,9 +1,9 @@
 <?php
-
-declare(strict_types=1);
 /**
  * Playground
  */
+
+declare(strict_types=1);
 namespace Tests\Unit\Playground\Cms\Models\PageRevision;
 
 use Tests\Unit\Playground\Cms\Models\ModelCase;
@@ -17,10 +17,14 @@ class ModelTest extends ModelCase
 
     protected bool $hasRelationships = true;
 
+    /**
+     * @var array<int, string> Test has one relationships.
+     */
     protected array $hasOne = [
         'creator',
         'modifier',
         'owner',
+        'parent',
         'page',
     ];
 }

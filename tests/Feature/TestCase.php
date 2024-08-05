@@ -26,5 +26,5 @@ class TestCase extends OrchestraTestCase
 
     protected bool $load_migrations_playground = true;
 
-    protected bool $setUpUserForPlayground = false;
+    protected bool $setUpUserForPlayground = true;
 }
