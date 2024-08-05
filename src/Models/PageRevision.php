@@ -51,7 +51,7 @@ use Playground\Models\Model;
  * @property int $revision
  * @property int $redirect_delay
  * @property int $status_code
- * @property string $route
+ * @property ?string $route
  * @property ?array $matrix
  * @property ?int $x
  * @property ?int $y
@@ -155,7 +155,7 @@ class PageRevision extends Model
         'revision' => false,
         'redirect_delay' => false,
         'status_code' => false,
-        'route' => '',
+        'route' => null,
         'matrix' => '{}',
         'x' => null,
         'y' => null,

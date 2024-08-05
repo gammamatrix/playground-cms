@@ -75,7 +75,7 @@ return new class() extends Migration
             $table->bigInteger('revision')->default(0)->unsigned();
             $table->integer('redirect_delay')->default(0)->unsigned();
             $table->integer('status_code')->default(0)->unsigned();
-            $table->string('route', 255)->default('');
+            $table->string('route', 255)->nullable();
 
             // Matrix
 
