@@ -234,7 +234,6 @@ class SnippetRevision extends Model
         'status',
         'rank',
         'size',
-        'revision',
         'matrix',
         'x',
         'y',

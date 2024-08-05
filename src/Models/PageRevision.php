@@ -248,7 +248,6 @@ class PageRevision extends Model
         'status',
         'rank',
         'size',
-        'revision',
         'redirect_delay',
         'status_code',
         'route',

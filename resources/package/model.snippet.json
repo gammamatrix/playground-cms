@@ -245,7 +245,6 @@
         "status",
         "rank",
         "size",
-        "revision",
         "matrix",
         "x",
         "y",
@@ -2339,7 +2338,7 @@
                 "icon": "",
                 "index": false,
                 "nullable": false,
-                "readOnly": false,
+                "readOnly": true,
                 "type": "bigInteger",
                 "unsigned": true,
                 "default": false

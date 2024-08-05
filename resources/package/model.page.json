@@ -259,7 +259,6 @@
         "status",
         "rank",
         "size",
-        "revision",
         "redirect_delay",
         "status_code",
         "route",
@@ -2498,7 +2497,7 @@
                 "icon": "",
                 "index": false,
                 "nullable": false,
-                "readOnly": false,
+                "readOnly": true,
                 "type": "bigInteger",
                 "unsigned": true,
                 "default": false
