@@ -1,12 +1,17 @@
 <?php
+
 /**
  * Playground
  */
 
 declare(strict_types=1);
+
 namespace Playground\Cms\Models;
 
+use Database\Factories\Playground\Cms\Models\SnippetFactory;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Support\Carbon;
 use Playground\Models\Model;
 
 /**
@@ -48,17 +53,17 @@ use Playground\Models\Model;
  * @property int $rank
  * @property int $size
  * @property int $revision
- * @property ?array $matrix
+ * @property ?array<string, mixed> $matrix
  * @property ?int $x
  * @property ?int $y
  * @property ?int $z
- * @property ?double $r
- * @property ?double $theta
- * @property ?double $rho
- * @property ?double $phi
- * @property ?double $elevation
- * @property ?double $latitude
- * @property ?double $longitude
+ * @property ?float $r
+ * @property ?float $theta
+ * @property ?float $rho
+ * @property ?float $phi
+ * @property ?float $elevation
+ * @property ?float $latitude
+ * @property ?float $longitude
  * @property bool $active
  * @property bool $canceled
  * @property bool $closed
@@ -92,22 +97,20 @@ use Playground\Models\Model;
  * @property string $icon
  * @property string $image
  * @property string $avatar
- * @property ?array $ui
- * @property ?array $assets
- * @property ?array $meta
- * @property ?array $notes
- * @property ?array $options
- * @property ?array $sources
+ * @property ?array<string, mixed> $ui
+ * @property ?array<string, mixed> $assets
+ * @property ?array<string, mixed> $meta
+ * @property ?array<int, array<string, mixed>> $notes
+ * @property ?array<string, mixed> $options
+ * @property ?array<string, mixed> $sources
  */
 class Snippet extends Model
 {
+    /** @use HasFactory<SnippetFactory> */
+    use HasFactory;
+
     protected $table = 'cms_snippets';
 
-    /**
-     * The default values for attributes.
-     *
-     * @var array<string, mixed>
-     */
     protected $attributes = [
         'snippet_type' => null,
         'created_by_id' => null,
@@ -196,11 +199,6 @@ class Snippet extends Model
         'sources' => '{}',
     ];
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array<int, string>
-     */
     protected $fillable = [
         'snippet_type',
         'owned_by_id',
@@ -282,11 +280,6 @@ class Snippet extends Model
         'sources',
     ];
 
-    /**
-     * Get the attributes that should be cast.
-     *
-     * @return array<string, string>
-     */
     protected function casts(): array
     {
         return [
@@ -376,7 +369,7 @@ class Snippet extends Model
     /**
      * The revisions of the snippet.
      *
-     * @return HasMany<SnippetRevision>
+     * @return HasMany<SnippetRevision, $this>
      */
     public function revisions(): HasMany
     {

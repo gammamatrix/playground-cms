@@ -1,9 +1,11 @@
 <?php
+
 /**
  * Playground
  */
 
 declare(strict_types=1);
+
 namespace Database\Factories\Playground\Cms\Models;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -46,20 +48,14 @@ class PageFactory extends Factory
 
     // States: flags
 
-    /**
-     * @return Factory<Page>
-     */
-    public function locked(): Factory
+    public function locked(): PageFactory
     {
         return $this->state(fn (array $attributes) => [
             'locked' => true,
         ]);
     }
 
-    /**
-     * @return Factory<Page>
-     */
-    public function published(): Factory
+    public function published(): PageFactory
     {
         return $this->state(fn (array $attributes) => [
             'published' => true,

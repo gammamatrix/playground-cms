@@ -1,12 +1,17 @@
 <?php
+
 /**
  * Playground
  */
 
 declare(strict_types=1);
+
 namespace Playground\Cms\Models;
 
+use Database\Factories\Playground\Cms\Models\PageRevisionFactory;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\HasOne;
+use Illuminate\Support\Carbon;
 use Playground\Models\Model;
 
 /**
@@ -52,17 +57,17 @@ use Playground\Models\Model;
  * @property int $redirect_delay
  * @property int $status_code
  * @property ?string $route
- * @property ?array $matrix
+ * @property ?array<string, mixed> $matrix
  * @property ?int $x
  * @property ?int $y
  * @property ?int $z
- * @property ?double $r
- * @property ?double $theta
- * @property ?double $rho
- * @property ?double $phi
- * @property ?double $elevation
- * @property ?double $latitude
- * @property ?double $longitude
+ * @property ?float $r
+ * @property ?float $theta
+ * @property ?float $rho
+ * @property ?float $phi
+ * @property ?float $elevation
+ * @property ?float $latitude
+ * @property ?float $longitude
  * @property bool $active
  * @property bool $canceled
  * @property bool $closed
@@ -99,16 +104,18 @@ use Playground\Models\Model;
  * @property string $icon
  * @property string $image
  * @property string $avatar
- * @property ?array $ui
- * @property ?array $assets
- * @property ?array $meta
- * @property ?array $notes
- * @property ?array $options
- * @property ?array $params
- * @property ?array $sources
+ * @property ?array<string, mixed> $ui
+ * @property ?array<string, mixed> $assets
+ * @property ?array<string, mixed> $meta
+ * @property ?array<int, array<string, mixed>> $notes
+ * @property ?array<string, mixed> $options
+ * @property ?array<string, mixed> $sources
  */
 class PageRevision extends Model
 {
+    /** @use HasFactory<PageRevisionFactory> */
+    use HasFactory;
+
     protected $table = 'cms_page_revisions';
 
     /**
@@ -212,11 +219,6 @@ class PageRevision extends Model
         'sources' => '{}',
     ];
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array<int, string>
-     */
     protected $fillable = [
         'page_type',
         'owned_by_id',
@@ -407,7 +409,7 @@ class PageRevision extends Model
     /**
      * The page of the revision.
      *
-     * @return HasOne<Page>
+     * @return HasOne<Page, $this>
      */
     public function page(): HasOne
     {

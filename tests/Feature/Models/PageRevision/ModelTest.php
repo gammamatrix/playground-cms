@@ -1,9 +1,11 @@
 <?php
+
 /**
  * Playground
  */
 
 declare(strict_types=1);
+
 namespace Tests\Feature\Playground\Cms\Models\PageRevision;
 
 use Tests\Feature\Playground\Cms\Models\ModelCase;

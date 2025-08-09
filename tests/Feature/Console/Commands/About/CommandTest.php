@@ -1,9 +1,11 @@
 <?php
+
 /**
  * Playground
  */
 
 declare(strict_types=1);
+
 namespace Tests\Feature\Playground\Cms\Console\Commands\About;
 
 use Illuminate\Console\Command;
