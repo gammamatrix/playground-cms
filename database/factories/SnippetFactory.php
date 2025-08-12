@@ -48,20 +48,14 @@ class SnippetFactory extends Factory
 
     // States: flags
 
-    /**
-     * @return Factory<Snippet>
-     */
-    public function locked(): Factory
+    public function locked(): SnippetFactory
     {
         return $this->state(fn (array $attributes) => [
             'locked' => true,
         ]);
     }
 
-    /**
-     * @return Factory<Snippet>
-     */
-    public function published(): Factory
+    public function published(): SnippetFactory
     {
         return $this->state(fn (array $attributes) => [
             'published' => true,

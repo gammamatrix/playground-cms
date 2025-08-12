@@ -20,6 +20,8 @@ class ModelCase extends BaseModelCase
     use DatabaseTransactions;
     use PackageProviders;
 
+    protected bool $debugModels = false;
+
     protected bool $hasMigrations = true;
 
     protected bool $load_migrations_laravel = false;

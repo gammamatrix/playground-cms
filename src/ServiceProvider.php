@@ -10,13 +10,14 @@ namespace Playground\Cms;
 
 use Illuminate\Foundation\Console\AboutCommand;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider;
+use Illuminate\Support\Facades\App;
 
 /**
  * \Playground\Cms\ServiceProvider
  */
 class ServiceProvider extends AuthServiceProvider
 {
-    public const VERSION = '73.0.0';
+    public const string VERSION = '73.0.0';
 
     public string $package = 'playground-cms';
 
@@ -29,13 +30,16 @@ class ServiceProvider extends AuthServiceProvider
     public function boot()
     {
         /**
-         * @var array<string, mixed> $config
+         * @var array{
+         *     about: bool,
+         *     load: array{migrations: bool}
+         * } $config
          */
         $config = config($this->package);
 
         if (! empty($config['load']) && is_array($config['load'])) {
 
-            if ($this->app->runningInConsole()) {
+            if (App::runningInConsole()) {
                 // Publish configuration
                 $this->publishes([
                     sprintf('%1$s/config/%2$s.php', dirname(__DIR__), $this->package) => config_path(sprintf('%1$s.php', $this->package)),

@@ -48,20 +48,14 @@ class PageRevisionFactory extends Factory
 
     // States: flags
 
-    /**
-     * @return Factory<PageRevision>
-     */
-    public function locked(): Factory
+    public function locked(): PageRevisionFactory
     {
         return $this->state(fn (array $attributes) => [
             'locked' => true,
         ]);
     }
 
-    /**
-     * @return Factory<PageRevision>
-     */
-    public function published(): Factory
+    public function published(): PageRevisionFactory
     {
         return $this->state(fn (array $attributes) => [
             'published' => true,

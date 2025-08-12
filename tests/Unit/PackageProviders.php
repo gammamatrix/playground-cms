@@ -18,6 +18,7 @@ trait PackageProviders
     protected function getPackageProviders($app)
     {
         return [
+            \Playground\Test\ServiceProvider::class,
             \Playground\ServiceProvider::class,
             \Playground\Cms\ServiceProvider::class,
         ];
