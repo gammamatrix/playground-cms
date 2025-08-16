@@ -65,6 +65,7 @@
         "analyse": "vendor/bin/phpstan analyse --verbose --debug --level max",
         "cloc": "cloc --exclude-dir=node_modules,output,vendor .",
         "format": "vendor/bin/pint",
-        "test": "vendor/bin/testbench package:test"
+        "test": "vendor/bin/testbench package:test",
+        "test-dev": "vendor/bin/phpunit -c phpunit-dev.xml"
     }
 }
