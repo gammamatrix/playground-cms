@@ -21,8 +21,9 @@
     "withSwagger": false,
     "withTests": true,
     "playground": true,
+    "revision": true,
     "package_name": "Playground: CMS",
-    "package_description": "Playground: Provide the CMS models for the Playground Content Management System.",
+    "package_description": "Playground: Provides the CMS models for the Playground Content Management System.",
     "package_homepage": "https://github.com/gammamatrix/playground-cms",
     "package_keywords": [
         "cms",
@@ -39,11 +40,14 @@
         }
     ],
     "package_require": {
-        "php": "^8.2",
-        "gammamatrix/playground": "*"
+        "php": "^8.4",
+        "gammamatrix/playground": "*",
+        "illuminate/database": "^12.0",
+        "illuminate/support": "^12.0"
     },
     "package_require_dev": {
-        "gammamatrix/playground-test": "*"
+        "gammamatrix/playground-test": "*",
+        "illuminate/testing": "^12.0"
     },
     "package_suggest": {
         "gammamatrix/playground-cms-api": "Provides an API, without a UI, to interact with the models provided in this package.",
@@ -58,10 +62,10 @@
     "packagist": "gammamatrix/playground-cms",
     "controllers": [],
     "models": {
-        "Page": "resources/package/model.page.json",
-        "PageRevision": "resources/package/model.page-revision.json",
-        "Snippet": "resources/package/model.snippet.json",
-        "SnippetRevision": "resources/package/model.snippet-revision.json"
+        "Page": "resources/configurations/playground-cms/model.page.json",
+        "PageRevision": "resources/configurations/playground-cms/model.page-revision.json",
+        "Snippet": "resources/configurations/playground-cms/model.snippet.json",
+        "SnippetRevision": "resources/configurations/playground-cms/model.snippet-revision.json"
     },
     "policies": [],
     "requests": [],
@@ -70,5 +74,5 @@
     "uses": [],
     "service_provider": "",
     "type": "playground-model",
-    "version": "73.0.0"
+    "version": "74.0.0"
 }

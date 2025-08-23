@@ -1,0 +1,16 @@
+{
+    "class": "SnippetRevisionFactory",
+    "config": "playground-cms",
+    "fqdn": "Database/Factories/Database/Factories/Playground/Cms/Models/SnippetRevisionFactory",
+    "module": "CMS",
+    "module_slug": "cms",
+    "name": "SnippetRevisionFactory",
+    "namespace": "Database/Factories/Playground/Cms/Models",
+    "organization": "Playground",
+    "package": "playground-cms",
+    "model": "SnippetRevision",
+    "model_fqdn": "Playground/Cms/Models/SnippetRevision",
+    "recipe": "cms",
+    "type": "playground-model",
+    "models": []
+}

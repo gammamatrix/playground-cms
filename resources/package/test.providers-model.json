@@ -1,0 +1,24 @@
+{
+    "class": "PackageProviders",
+    "config": "playground-cms",
+    "extends": "",
+    "fqdn": "Tests/Unit/Playground/Cms/PackageProviders",
+    "model": "",
+    "model_fqdn": "",
+    "module": "CMS",
+    "module_slug": "cms",
+    "name": "PackageProviders",
+    "namespace": "Tests/Unit/Playground/Cms",
+    "organization": "Playground",
+    "package": "playground-cms",
+    "playground": true,
+    "suite": "unit",
+    "type": "providers-model",
+    "uses": [],
+    "models": [],
+    "package_providers": [
+        "\\Playground\\Test\\ServiceProvider::class",
+        "\\Playground\\ServiceProvider::class",
+        "\\Playground\\Cms\\ServiceProvider::class"
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "class": "ModelTest",
+    "config": "playground-cms",
+    "extends": "ModelCase",
+    "fqdn": "Tests/Feature/Playground/Cms/Models/Page/ModelTest",
+    "model": "Page",
+    "model_fqdn": "Playground/Cms/Models/Page",
+    "module": "CMS",
+    "module_slug": "cms",
+    "name": "Page",
+    "namespace": "Tests/Feature/Playground/Cms/Models/Page",
+    "organization": "Playground",
+    "package": "playground-cms",
+    "playground": true,
+    "suite": "feature",
+    "type": "model",
+    "uses": [
+        "Tests/Feature/Playground/Cms/Models/ModelCase"
+    ],
+    "models": [],
+    "package_providers": []
+}

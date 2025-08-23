@@ -1,0 +1,16 @@
+{
+    "class": "PageRevisionFactory",
+    "config": "playground-cms",
+    "fqdn": "Database/Factories/Database/Factories/Playground/Cms/Models/PageRevisionFactory",
+    "module": "CMS",
+    "module_slug": "cms",
+    "name": "PageRevisionFactory",
+    "namespace": "Database/Factories/Playground/Cms/Models",
+    "organization": "Playground",
+    "package": "playground-cms",
+    "model": "PageRevision",
+    "model_fqdn": "Playground/Cms/Models/PageRevision",
+    "recipe": "cms",
+    "type": "playground-model",
+    "models": []
+}

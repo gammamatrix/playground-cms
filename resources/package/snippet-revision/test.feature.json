@@ -1,0 +1,22 @@
+{
+    "class": "ModelTest",
+    "config": "playground-cms",
+    "extends": "ModelCase",
+    "fqdn": "Tests/Feature/Playground/Cms/Models/SnippetRevision/ModelTest",
+    "model": "SnippetRevision",
+    "model_fqdn": "Playground/Cms/Models/SnippetRevision",
+    "module": "CMS",
+    "module_slug": "cms",
+    "name": "SnippetRevision",
+    "namespace": "Tests/Feature/Playground/Cms/Models/SnippetRevision",
+    "organization": "Playground",
+    "package": "playground-cms",
+    "playground": true,
+    "suite": "feature",
+    "type": "model",
+    "uses": [
+        "Tests/Feature/Playground/Cms/Models/ModelCase"
+    ],
+    "models": [],
+    "package_providers": []
+}

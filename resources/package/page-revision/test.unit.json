@@ -1,0 +1,22 @@
+{
+    "class": "ModelTest",
+    "config": "playground-cms",
+    "extends": "ModelCase",
+    "fqdn": "Tests/Unit/Playground/Cms/Models/PageRevision/ModelTest",
+    "model": "PageRevision",
+    "model_fqdn": "Playground/Cms/Models/PageRevision",
+    "module": "CMS",
+    "module_slug": "cms",
+    "name": "PageRevision",
+    "namespace": "Tests/Unit/Playground/Cms/Models/PageRevision",
+    "organization": "Playground",
+    "package": "playground-cms",
+    "playground": true,
+    "suite": "unit",
+    "type": "model",
+    "uses": [
+        "Tests/Unit/Playground/Cms/Models/ModelCase"
+    ],
+    "models": [],
+    "package_providers": []
+}

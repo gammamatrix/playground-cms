@@ -1,0 +1,22 @@
+{
+    "class": "ModelTest",
+    "config": "playground-cms",
+    "extends": "ModelCase",
+    "fqdn": "Tests/Feature/Playground/Cms/Models/Snippet/ModelTest",
+    "model": "Snippet",
+    "model_fqdn": "Playground/Cms/Models/Snippet",
+    "module": "CMS",
+    "module_slug": "cms",
+    "name": "Snippet",
+    "namespace": "Tests/Feature/Playground/Cms/Models/Snippet",
+    "organization": "Playground",
+    "package": "playground-cms",
+    "playground": true,
+    "suite": "feature",
+    "type": "model",
+    "uses": [
+        "Tests/Feature/Playground/Cms/Models/ModelCase"
+    ],
+    "models": [],
+    "package_providers": []
+}

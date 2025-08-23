@@ -1,0 +1,16 @@
+{
+    "class": "SnippetFactory",
+    "config": "playground-cms",
+    "fqdn": "Database/Factories/Database/Factories/Playground/Cms/Models/SnippetFactory",
+    "module": "CMS",
+    "module_slug": "cms",
+    "name": "SnippetFactory",
+    "namespace": "Database/Factories/Playground/Cms/Models",
+    "organization": "Playground",
+    "package": "playground-cms",
+    "model": "Snippet",
+    "model_fqdn": "Playground/Cms/Models/Snippet",
+    "recipe": "cms",
+    "type": "playground-model",
+    "models": []
+}

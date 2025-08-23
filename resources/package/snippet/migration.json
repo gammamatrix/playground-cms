@@ -1,0 +1,17 @@
+{
+    "class": "2010_09_30_000000_create_cms_snippets_table",
+    "config": "playground-cms",
+    "model": "Snippet",
+    "model_fqdn": "Playground/Cms/Models/Snippet",
+    "module": "CMS",
+    "module_slug": "cms",
+    "name": "Snippet",
+    "namespace": "Playground/Cms",
+    "organization": "Playground",
+    "package": "playground-cms",
+    "table": "cms_snippets",
+    "type": "playground-model",
+    "models": [],
+    "create": true,
+    "update": false
+}

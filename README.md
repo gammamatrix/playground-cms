@@ -8,7 +8,7 @@ The Playground CMS is a package for [Laravel](https://laravel.com/docs/12.x) app
 
 Playground: Provides the CMS models for the Playground Content Management System.
 
-Read more on using [Playground: CMS at Read the Docs.](https://gammamatrix-playground.readthedocs.io/en/develop/components/cms.html)
+Read more on using [Playground: CMS at Read the Docs](https://gammamatrix-playground.readthedocs.io/en/develop/components/cms.html)
 
 ## Installation
 
@@ -74,24 +74,23 @@ composer cloc
 ```
 
 ```
-➜  playground-cms git:(feature/GH-9) ✗ composer cloc
-> cloc --exclude-dir=node_modules,output,vendor .
-      46 text files.
-      43 unique files.
-       5 files ignored.
+➜  playground-cms git:(develop) ✗ composer cloc
+      74 text files.
+      70 unique files.
+       6 files ignored.
 
-github.com/AlDanial/cloc v 1.98  T=0.09 s (453.6 files/s, 159004.1 lines/s)
+github.com/AlDanial/cloc v 2.06  T=0.04 s (1930.0 files/s, 431128.8 lines/s)
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
-JSON                             6              0              0          11017
-PHP                             29            264            838           2281
+JSON                            29              0              0          11710
+PHP                             28            317            723           2074
+XML                              8              0              7            350
 YAML                             1              5              0            275
-XML                              3              0              7            215
-Markdown                         3             44              0            111
+Markdown                         3             45              0            116
 INI                              1              3              0             12
 -------------------------------------------------------------------------------
-SUM:                            43            316            845          13911
+SUM:                            70            370            730          14537
 -------------------------------------------------------------------------------
 ```
 

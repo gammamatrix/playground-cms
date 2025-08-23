@@ -1,0 +1,22 @@
+{
+    "class": "ModelCase",
+    "config": "playground-cms",
+    "extends": "Playground/Test/Feature/Models/ModelCase as BaseModelCase",
+    "fqdn": "Tests/Feature/Playground/Cms/Models/Models",
+    "model": "",
+    "model_fqdn": "",
+    "module": "CMS",
+    "module_slug": "cms",
+    "name": "ModelCase",
+    "namespace": "Tests/Feature/Playground/Cms/Models",
+    "organization": "Playground",
+    "package": "playground-cms",
+    "playground": true,
+    "suite": "feature",
+    "type": "model-case",
+    "uses": [
+        "Tests/Unit/Playground/Cms/PackageProviders"
+    ],
+    "models": [],
+    "package_providers": []
+}

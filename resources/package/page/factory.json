@@ -1,0 +1,16 @@
+{
+    "class": "PageFactory",
+    "config": "playground-cms",
+    "fqdn": "Database/Factories/Database/Factories/Playground/Cms/Models/PageFactory",
+    "module": "CMS",
+    "module_slug": "cms",
+    "name": "PageFactory",
+    "namespace": "Database/Factories/Playground/Cms/Models",
+    "organization": "Playground",
+    "package": "playground-cms",
+    "model": "Page",
+    "model_fqdn": "Playground/Cms/Models/Page",
+    "recipe": "cms",
+    "type": "playground-model",
+    "models": []
+}
