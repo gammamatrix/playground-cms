@@ -1,20 +1,20 @@
-# Playground CMS
+# Playground: CMS
 
 [![Playground CI Workflow](https://github.com/gammamatrix/playground-cms/actions/workflows/ci.yml/badge.svg?branch=develop)](https://raw.githubusercontent.com/gammamatrix/playground-cms/testing/develop/testdox.txt)
 [![Test Coverage](https://raw.githubusercontent.com/gammamatrix/playground-cms/testing/develop/coverage.svg)](tests)
-[![PHPStan Level 10 src and tests](https://img.shields.io/badge/PHPStan-level%2010-brightgreen)](.github/workflows/ci.yml#L128)
+[![PHPStan Level 10](https://img.shields.io/badge/PHPStan-level%2010-brightgreen)](.github/workflows/ci.yml#L128)
 
-The Playground CMS is a package for [Laravel](https://laravel.com/docs/11.x) applications.
+The Playground CMS is a package for [Laravel](https://laravel.com/docs/12.x) applications.
 
-This application provides the models to use the Playground CMS, a Content Management System.
+Playground: Provides the CMS models for the Playground Content Management System.
 
-Read more on using [Playground CMS at Read the Docs: Playground Documentation.](https://gammamatrix-playground.readthedocs.io/en/develop/components/cms.html)
+Read more on using [Playground: CMS at Read the Docs.](https://gammamatrix-playground.readthedocs.io/en/develop/components/cms.html)
 
 ## Installation
 
 **NOTE:** This package is required by:
-- [Playground CMS API](https://github.com/gammamatrix/playground-cms-api): API without UI
-- [Playground CMS Resource](https://github.com/gammamatrix/playground-cms-resource): API with UI
+- [Playground: CMS API](https://github.com/gammamatrix/playground-cms-api): API without UI
+- [Playground: CMS Resource](https://github.com/gammamatrix/playground-cms-resource): API with UI
 
 Install this package, with composer, to get access to the CMS Models:
 
@@ -26,7 +26,7 @@ composer require gammamatrix/playground-cms
 
 Playground CMS provides information in the `artisan about` command.
 
-<img src="resources/docs/artisan-about-playground-cms.png" alt="screenshot of artisan about command with Playground CMS.">
+<img src="resources/docs/artisan-about-playground-cms.png" alt="screenshot of artisan about command with Playground: CMS.">
 
 ## Configuration
 
@@ -50,10 +50,10 @@ php artisan vendor:publish --provider="Playground\Cms\ServiceProvider" --tag="pl
 ## Models
 
 This package includes [factories](database/factories), models and [migrations](database/migrations) for:
-- [Pages](src/Models/Page.php)
-- [Page Revisions](src/Models/PageRevision.php)
-- [Snippets](src/Models/Snippet.php)
-- [Snippet Revisions](src/Models/SnippetRevision.php)
+- [Page](src/Models/Page.php)
+- [PageRevision](src/Models/PageRevision.php)
+- [Snippet](src/Models/Snippet.php)
+- [SnippetRevision](src/Models/SnippetRevision.php)
 
 ## Migrations
 
@@ -97,7 +97,7 @@ SUM:                            43            316            845          13911
 
 ## PHPStan
 
-Tests at level 9 on:
+Tests at level 10 on:
 - `config/`
 - `database/`
 - `src/`
@@ -116,8 +116,14 @@ composer format
 
 ## Testing
 
+Unit tests
 ```sh
 composer test
+```
+
+Unit and feature tests
+```sh
+composer test-dev
 ```
 
 ## Changelog

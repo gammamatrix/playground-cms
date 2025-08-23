@@ -109,6 +109,7 @@ use Playground\Models\Model;
  * @property ?array<string, mixed> $meta
  * @property ?array<int, array<string, mixed>> $notes
  * @property ?array<string, mixed> $options
+ * @property ?array<string, mixed> $params
  * @property ?array<string, mixed> $sources
  */
 class PageRevision extends Model
@@ -118,11 +119,6 @@ class PageRevision extends Model
 
     protected $table = 'cms_page_revisions';
 
-    /**
-     * The default values for attributes.
-     *
-     * @var array<string, mixed>
-     */
     protected $attributes = [
         'page_type' => null,
         'created_by_id' => null,
@@ -308,11 +304,6 @@ class PageRevision extends Model
         'sources',
     ];
 
-    /**
-     * Get the attributes that should be cast.
-     *
-     * @return array<string, string>
-     */
     protected function casts(): array
     {
         return [

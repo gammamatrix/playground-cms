@@ -106,7 +106,7 @@ jobs:
       env:
         XDEBUG_MODE: coverage
       with:
-        version: "11.0"
+        version: "12.3"
         php_version: "8.4"
         php_extensions: intl xdebug
         configuration: phpunit-ci.xml

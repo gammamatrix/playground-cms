@@ -108,6 +108,7 @@ use Playground\Models\Model;
  * @property ?array<string, mixed> $meta
  * @property ?array<int, array<string, mixed>> $notes
  * @property ?array<string, mixed> $options
+ * @property ?array<string, mixed> $params
  * @property ?array<string, mixed> $sources
  */
 class Page extends Model

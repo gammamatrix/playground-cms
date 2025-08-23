@@ -1,6 +1,6 @@
 {
     "name": "gammamatrix/playground-cms",
-    "description": "Playground: Provide the CMS models for the Playground Content Management System.",
+    "description": "Playground: Provides the CMS models for the Playground Content Management System.",
     "keywords": [
         "cms",
         "gammamatrix",
