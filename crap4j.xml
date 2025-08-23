@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <crap_result>
   <project/>
-  <timestamp>2025-08-16 18:57:43</timestamp>
+  <timestamp>2025-08-23 02:16:58</timestamp>
   <stats>
     <name>Method Crap Stats</name>
     <methodCount>12</methodCount>
@@ -26,8 +26,8 @@
       <package>Playground\Cms\Models</package>
       <className>Playground\Cms\Models\Page</className>
       <methodName>revisions</methodName>
-      <methodSignature>revisions(): Illuminate\Database\Eloquent\Relations\HasMany</methodSignature>
-      <fullMethod>revisions(): Illuminate\Database\Eloquent\Relations\HasMany</fullMethod>
+      <methodSignature>revisions(): HasMany</methodSignature>
+      <fullMethod>revisions(): HasMany</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -48,8 +48,8 @@
       <package>Playground\Cms\Models</package>
       <className>Playground\Cms\Models\PageRevision</className>
       <methodName>page</methodName>
-      <methodSignature>page(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>page(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>page(): HasOne</methodSignature>
+      <fullMethod>page(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -70,8 +70,8 @@
       <package>Playground\Cms\Models</package>
       <className>Playground\Cms\Models\Snippet</className>
       <methodName>revisions</methodName>
-      <methodSignature>revisions(): Illuminate\Database\Eloquent\Relations\HasMany</methodSignature>
-      <fullMethod>revisions(): Illuminate\Database\Eloquent\Relations\HasMany</fullMethod>
+      <methodSignature>revisions(): HasMany</methodSignature>
+      <fullMethod>revisions(): HasMany</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
@@ -92,8 +92,8 @@
       <package>Playground\Cms\Models</package>
       <className>Playground\Cms\Models\SnippetRevision</className>
       <methodName>snippet</methodName>
-      <methodSignature>snippet(): Illuminate\Database\Eloquent\Relations\HasOne</methodSignature>
-      <fullMethod>snippet(): Illuminate\Database\Eloquent\Relations\HasOne</fullMethod>
+      <methodSignature>snippet(): HasOne</methodSignature>
+      <fullMethod>snippet(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
