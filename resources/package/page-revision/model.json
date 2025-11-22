@@ -52,8 +52,8 @@
         "modified_by_id": null,
         "owned_by_id": null,
         "parent_id": null,
-        "page_id": null,
         "matrix_id": null,
+        "page_id": null,
         "created_at": null,
         "updated_at": null,
         "deleted_at": null,
@@ -234,8 +234,8 @@
         "page_type",
         "owned_by_id",
         "parent_id",
-        "page_id",
         "matrix_id",
+        "page_id",
         "canceled_at",
         "closed_at",
         "embargo_at",
@@ -370,16 +370,16 @@
                 "type": "uuid"
             },
             {
-                "column": "page_id",
-                "label": "Page id",
+                "column": "matrix_id",
+                "label": "Matrix id",
                 "icon": "",
                 "nullable": true,
                 "unsigned": true,
                 "type": "uuid"
             },
             {
-                "column": "matrix_id",
-                "label": "Matrix id",
+                "column": "page_id",
+                "label": "Page id",
                 "icon": "",
                 "nullable": true,
                 "unsigned": true,
@@ -1141,15 +1141,15 @@
             "type": "uuid"
         },
         {
-            "column": "page_id",
-            "label": "Page id",
+            "column": "matrix_id",
+            "label": "Matrix id",
             "icon": "",
             "nullable": false,
             "type": "uuid"
         },
         {
-            "column": "matrix_id",
-            "label": "Matrix id",
+            "column": "page_id",
+            "label": "Page id",
             "icon": "",
             "nullable": false,
             "type": "uuid"
@@ -1837,13 +1837,13 @@
                 "unsigned": false,
                 "type": "uuid"
             },
-            "page_id": {
-                "column": "page_id",
-                "label": "Page id",
+            "matrix_id": {
+                "column": "matrix_id",
+                "label": "Matrix id",
                 "description": "",
                 "foreign": {
                     "references": "id",
-                    "on": "cms_pages"
+                    "on": "matrix_matrices"
                 },
                 "icon": "",
                 "index": true,
@@ -1852,13 +1852,13 @@
                 "unsigned": false,
                 "type": "uuid"
             },
-            "matrix_id": {
-                "column": "matrix_id",
-                "label": "Matrix id",
+            "page_id": {
+                "column": "page_id",
+                "label": "Page id",
                 "description": "",
                 "foreign": {
                     "references": "id",
-                    "on": "matrix_matrices"
+                    "on": "cms_pages"
                 },
                 "icon": "",
                 "index": true,
@@ -2890,10 +2890,10 @@
         }
     },
     "uses": [
-        "Illuminate/Database/Eloquent/Relations/HasOne",
-        "Playground/Models/Model",
-        "Illuminate/Database/Eloquent/Factories/HasFactory",
         "Database/Factories/Playground/Cms/Models/PageRevisionFactory",
-        "Illuminate/Support/Carbon"
+        "Illuminate/Database/Eloquent/Factories/HasFactory",
+        "Illuminate/Database/Eloquent/Relations/HasOne",
+        "Illuminate/Support/Carbon",
+        "Playground/Models/Model"
     ]
 }

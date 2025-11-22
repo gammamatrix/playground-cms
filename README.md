@@ -8,7 +8,7 @@ The Playground CMS is a package for [Laravel](https://laravel.com/docs/12.x) app
 
 Playground: Provides the CMS models for the Playground Content Management System.
 
-Read more on using [Playground: CMS at Read the Docs](https://gammamatrix-playground.readthedocs.io/en/develop/components/cms.html)
+Read more on using [Playground: CMS at Read the Docs](https://gammamatrix-playground.readthedocs.io/en/develop/built-components/cms.html)
 
 ## Installation
 
@@ -123,6 +123,11 @@ composer test
 Unit and feature tests
 ```sh
 composer test-dev
+```
+
+Run unit and feature tests in parallel:
+```sh
+composer test-parallel
 ```
 
 ## Changelog

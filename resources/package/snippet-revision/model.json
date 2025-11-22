@@ -52,8 +52,8 @@
         "modified_by_id": null,
         "owned_by_id": null,
         "parent_id": null,
-        "snippet_id": null,
         "matrix_id": null,
+        "snippet_id": null,
         "created_at": null,
         "updated_at": null,
         "deleted_at": null,
@@ -220,8 +220,8 @@
         "snippet_type",
         "owned_by_id",
         "parent_id",
-        "snippet_id",
         "matrix_id",
+        "snippet_id",
         "canceled_at",
         "closed_at",
         "embargo_at",
@@ -349,16 +349,16 @@
                 "type": "uuid"
             },
             {
-                "column": "snippet_id",
-                "label": "Snippet id",
+                "column": "matrix_id",
+                "label": "Matrix id",
                 "icon": "",
                 "nullable": true,
                 "unsigned": true,
                 "type": "uuid"
             },
             {
-                "column": "matrix_id",
-                "label": "Matrix id",
+                "column": "snippet_id",
+                "label": "Snippet id",
                 "icon": "",
                 "nullable": true,
                 "unsigned": true,
@@ -1064,15 +1064,15 @@
             "type": "uuid"
         },
         {
-            "column": "snippet_id",
-            "label": "Snippet id",
+            "column": "matrix_id",
+            "label": "Matrix id",
             "icon": "",
             "nullable": false,
             "type": "uuid"
         },
         {
-            "column": "matrix_id",
-            "label": "Matrix id",
+            "column": "snippet_id",
+            "label": "Snippet id",
             "icon": "",
             "nullable": false,
             "type": "uuid"
@@ -1711,13 +1711,13 @@
                 "unsigned": false,
                 "type": "uuid"
             },
-            "snippet_id": {
-                "column": "snippet_id",
-                "label": "Snippet id",
+            "matrix_id": {
+                "column": "matrix_id",
+                "label": "Matrix id",
                 "description": "",
                 "foreign": {
                     "references": "id",
-                    "on": "cms_snippets"
+                    "on": "matrix_matrices"
                 },
                 "icon": "",
                 "index": true,
@@ -1726,13 +1726,13 @@
                 "unsigned": false,
                 "type": "uuid"
             },
-            "matrix_id": {
-                "column": "matrix_id",
-                "label": "Matrix id",
+            "snippet_id": {
+                "column": "snippet_id",
+                "label": "Snippet id",
                 "description": "",
                 "foreign": {
                     "references": "id",
-                    "on": "matrix_matrices"
+                    "on": "cms_snippets"
                 },
                 "icon": "",
                 "index": true,
@@ -2681,10 +2681,10 @@
         }
     },
     "uses": [
-        "Illuminate/Database/Eloquent/Relations/HasOne",
-        "Playground/Models/Model",
-        "Illuminate/Database/Eloquent/Factories/HasFactory",
         "Database/Factories/Playground/Cms/Models/SnippetRevisionFactory",
-        "Illuminate/Support/Carbon"
+        "Illuminate/Database/Eloquent/Factories/HasFactory",
+        "Illuminate/Database/Eloquent/Relations/HasOne",
+        "Illuminate/Support/Carbon",
+        "Playground/Models/Model"
     ]
 }

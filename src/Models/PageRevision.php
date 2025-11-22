@@ -23,8 +23,8 @@ use Playground\Models\Model;
  * @property ?scalar $modified_by_id
  * @property ?scalar $owned_by_id
  * @property ?string $parent_id
- * @property ?string $page_id
  * @property ?string $matrix_id
+ * @property ?string $page_id
  * @property ?Carbon $created_at
  * @property ?Carbon $updated_at
  * @property ?Carbon $deleted_at
@@ -125,8 +125,8 @@ class PageRevision extends Model
         'modified_by_id' => null,
         'owned_by_id' => null,
         'parent_id' => null,
-        'page_id' => null,
         'matrix_id' => null,
+        'page_id' => null,
         'created_at' => null,
         'updated_at' => null,
         'deleted_at' => null,
@@ -219,8 +219,8 @@ class PageRevision extends Model
         'page_type',
         'owned_by_id',
         'parent_id',
-        'page_id',
         'matrix_id',
+        'page_id',
         'canceled_at',
         'closed_at',
         'embargo_at',

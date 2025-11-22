@@ -34,8 +34,8 @@ return new class extends Migration
             $table->uuid('modified_by_id')->nullable()->index();
             $table->uuid('owned_by_id')->nullable()->index();
             $table->uuid('parent_id')->nullable()->index();
-            $table->uuid('snippet_id')->nullable()->index();
             $table->uuid('matrix_id')->nullable()->index();
+            $table->uuid('snippet_id')->nullable()->index();
 
             // Dates
 
@@ -52,8 +52,8 @@ return new class extends Migration
             $table->dateTime('postponed_at')->nullable();
             $table->dateTime('published_at')->nullable();
             $table->dateTime('released_at')->nullable();
-            $table->dateTime('resumed_at')->nullable();
             $table->dateTime('resolved_at')->nullable()->index();
+            $table->dateTime('resumed_at')->nullable();
             $table->dateTime('suspended_at')->nullable();
             $table->dateTime('timer_end_at')->nullable()->index();
             $table->dateTime('timer_start_at')->nullable()->index();

@@ -15,23 +15,28 @@
     "withFactories": true,
     "withMigrations": true,
     "withModels": true,
+    "withOpenAPI": false,
     "withPolicies": false,
     "withRequests": false,
     "withRoutes": false,
-    "withSwagger": false,
     "withTests": true,
+    "withTranslations": false,
     "playground": true,
     "revision": true,
+    "docs_name": "",
+    "docs_url": "",
     "package_name": "Playground: CMS",
+    "model_package": "",
+    "model_package_name": "",
     "package_description": "Playground: Provides the CMS models for the Playground Content Management System.",
     "package_homepage": "https://github.com/gammamatrix/playground-cms",
-    "package_keywords": [
-        "cms",
-        "gammamatrix",
-        "laravel",
-        "playground"
-    ],
     "package_license": "MIT",
+    "packagist": "gammamatrix/playground-cms",
+    "postman_collection": "",
+    "postman_url": "",
+    "service_provider": "",
+    "type": "playground-model",
+    "version": "74.0.0",
     "package_authors": [
         {
             "name": "Jeremy Postlethwaite",
@@ -39,6 +44,18 @@
             "role": "Developer"
         }
     ],
+    "package_autoload_psr4": [],
+    "package_autoload_dev_psr4": [],
+    "package_keywords": [
+        "cms",
+        "gammamatrix",
+        "laravel",
+        "playground"
+    ],
+    "package_laravel_providers": [
+        "Playground/Cms/ServiceProvider"
+    ],
+    "package_providers": [],
     "package_require": {
         "php": "^8.4",
         "gammamatrix/playground": "*",
@@ -53,26 +70,17 @@
         "gammamatrix/playground-cms-api": "Provides an API, without a UI, to interact with the models provided in this package.",
         "gammamatrix/playground-cms-resource": "Provides a resource API and optional Blade UI to interact with the models provided in this package."
     },
-    "package_autoload_psr4": [],
-    "package_autoload_dev_psr4": [],
-    "package_providers": [],
-    "package_laravel_providers": [
-        "Playground/Cms/ServiceProvider"
-    ],
-    "packagist": "gammamatrix/playground-cms",
     "controllers": [],
     "models": {
-        "Page": "resources/configurations/playground-cms/model.page.json",
-        "PageRevision": "resources/configurations/playground-cms/model.page-revision.json",
-        "Snippet": "resources/configurations/playground-cms/model.snippet.json",
-        "SnippetRevision": "resources/configurations/playground-cms/model.snippet-revision.json"
+        "Page": "resources/package/page/model.json",
+        "PageRevision": "resources/package/page-revision/model.json",
+        "Snippet": "resources/package/snippet/model.json",
+        "SnippetRevision": "resources/package/snippet-revision/model.json"
     },
     "policies": [],
     "requests": [],
     "routes": [],
     "transformers": [],
-    "uses": [],
-    "service_provider": "",
-    "type": "playground-model",
-    "version": "74.0.0"
+    "translations": [],
+    "uses": []
 }
