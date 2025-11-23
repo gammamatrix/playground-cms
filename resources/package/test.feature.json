@@ -15,8 +15,8 @@
     "suite": "feature",
     "type": "playground-model-test-case",
     "uses": [
-        "Playground/Test/OrchestraTestCase",
-        "Tests/Unit/Playground/Cms/PackageProviders"
+        "Tests/Unit/Playground/Cms/PackageProviders",
+        "Playground/Test/OrchestraTestCase"
     ],
     "models": [],
     "package_providers": []

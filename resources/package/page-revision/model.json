@@ -2890,10 +2890,10 @@
         }
     },
     "uses": [
-        "Database/Factories/Playground/Cms/Models/PageRevisionFactory",
         "Illuminate/Database/Eloquent/Factories/HasFactory",
-        "Illuminate/Database/Eloquent/Relations/HasOne",
+        "Database/Factories/Playground/Cms/Models/PageRevisionFactory",
         "Illuminate/Support/Carbon",
+        "Illuminate/Database/Eloquent/Relations/HasOne",
         "Playground/Models/Model"
     ]
 }

@@ -2681,10 +2681,10 @@
         }
     },
     "uses": [
-        "Database/Factories/Playground/Cms/Models/SnippetRevisionFactory",
         "Illuminate/Database/Eloquent/Factories/HasFactory",
-        "Illuminate/Database/Eloquent/Relations/HasOne",
+        "Database/Factories/Playground/Cms/Models/SnippetRevisionFactory",
         "Illuminate/Support/Carbon",
+        "Illuminate/Database/Eloquent/Relations/HasOne",
         "Playground/Models/Model"
     ]
 }
