@@ -8,6 +8,9 @@ declare(strict_types=1);
 
 namespace Tests\Feature\Playground\Cms\Models\Snippet;
 
+use Playground\Cms\Models\Snippet;
+use Playground\Cms\Models\SnippetRevision;
+use Playground\Models\User;
 use Tests\Feature\Playground\Cms\Models\ModelCase;
 
 /**
@@ -15,14 +18,14 @@ use Tests\Feature\Playground\Cms\Models\ModelCase;
  */
 class ModelTest extends ModelCase
 {
-    protected string $modelClass = \Playground\Cms\Models\Snippet::class;
+    protected string $modelClass = Snippet::class;
 
     protected bool $hasRelationships = true;
 
     protected array $hasMany = [
         'revisions' => [
             'key' => 'snippet_id',
-            'modelClass' => \Playground\Cms\Models\SnippetRevision::class,
+            'modelClass' => SnippetRevision::class,
         ],
     ];
 
@@ -30,22 +33,22 @@ class ModelTest extends ModelCase
         'creator' => [
             'key' => 'created_by_id',
             'rule' => 'create',
-            'modelClass' => \Playground\Models\User::class,
+            'modelClass' => User::class,
         ],
         'modifier' => [
             'key' => 'modified_by_id',
             'rule' => 'first',
-            'modelClass' => \Playground\Models\User::class,
+            'modelClass' => User::class,
         ],
         'owner' => [
             'key' => 'owned_by_id',
             'rule' => 'first',
-            'modelClass' => \Playground\Models\User::class,
+            'modelClass' => User::class,
         ],
         'parent' => [
             'key' => 'parent_id',
             'rule' => 'create',
-            'modelClass' => \Playground\Cms\Models\Snippet::class,
+            'modelClass' => Snippet::class,
         ],
     ];
 }

@@ -8,6 +8,7 @@ declare(strict_types=1);
 
 namespace Tests\Unit\Playground\Cms\Models\SnippetRevision;
 
+use Playground\Cms\Models\SnippetRevision;
 use Tests\Unit\Playground\Cms\Models\ModelCase;
 
 /**
@@ -15,7 +16,7 @@ use Tests\Unit\Playground\Cms\Models\ModelCase;
  */
 class ModelTest extends ModelCase
 {
-    protected string $modelClass = \Playground\Cms\Models\SnippetRevision::class;
+    protected string $modelClass = SnippetRevision::class;
 
     protected bool $hasRelationships = true;
 

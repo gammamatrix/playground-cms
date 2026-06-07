@@ -8,6 +8,9 @@ declare(strict_types=1);
 
 namespace Tests\Feature\Playground\Cms\Models\PageRevision;
 
+use Playground\Cms\Models\Page;
+use Playground\Cms\Models\PageRevision;
+use Playground\Models\User;
 use Tests\Feature\Playground\Cms\Models\ModelCase;
 
 /**
@@ -15,7 +18,7 @@ use Tests\Feature\Playground\Cms\Models\ModelCase;
  */
 class ModelTest extends ModelCase
 {
-    protected string $modelClass = \Playground\Cms\Models\PageRevision::class;
+    protected string $modelClass = PageRevision::class;
 
     protected bool $hasRelationships = true;
 
@@ -23,27 +26,27 @@ class ModelTest extends ModelCase
         'creator' => [
             'key' => 'created_by_id',
             'rule' => 'create',
-            'modelClass' => \Playground\Models\User::class,
+            'modelClass' => User::class,
         ],
         'modifier' => [
             'key' => 'modified_by_id',
             'rule' => 'first',
-            'modelClass' => \Playground\Models\User::class,
+            'modelClass' => User::class,
         ],
         'owner' => [
             'key' => 'owned_by_id',
             'rule' => 'first',
-            'modelClass' => \Playground\Models\User::class,
+            'modelClass' => User::class,
         ],
         'parent' => [
             'key' => 'parent_id',
             'rule' => 'create',
-            'modelClass' => \Playground\Cms\Models\PageRevision::class,
+            'modelClass' => PageRevision::class,
         ],
         'page' => [
             'key' => 'page_id',
             'rule' => 'create',
-            'modelClass' => \Playground\Cms\Models\Page::class,
+            'modelClass' => Page::class,
         ],
     ];
 }
