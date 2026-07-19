@@ -66,8 +66,8 @@
         "postponed_at": null,
         "published_at": null,
         "released_at": null,
-        "resumed_at": null,
         "resolved_at": null,
+        "resumed_at": null,
         "suspended_at": null,
         "timer_end_at": null,
         "timer_start_at": null,
@@ -155,8 +155,8 @@
         "postponed_at": "datetime",
         "published_at": "datetime",
         "released_at": "datetime",
-        "resumed_at": "datetime",
         "resolved_at": "datetime",
+        "resumed_at": "datetime",
         "suspended_at": "datetime",
         "timer_end_at": "datetime",
         "timer_start_at": "datetime",
@@ -245,8 +245,8 @@
         "postponed_at",
         "published_at",
         "released_at",
-        "resumed_at",
         "resolved_at",
+        "resumed_at",
         "suspended_at",
         "timer_end_at",
         "timer_start_at",
@@ -484,16 +484,16 @@
                 "type": "datetime"
             },
             {
-                "column": "resumed_at",
-                "label": "Resumed at",
+                "column": "resolved_at",
+                "label": "Resolved at",
                 "icon": "",
                 "nullable": true,
                 "unsigned": true,
                 "type": "datetime"
             },
             {
-                "column": "resolved_at",
-                "label": "Resolved at",
+                "column": "resumed_at",
+                "label": "Resumed at",
                 "icon": "",
                 "nullable": true,
                 "unsigned": true,
@@ -1239,15 +1239,15 @@
             "type": "string"
         },
         {
-            "column": "resumed_at",
-            "label": "Resumed at",
+            "column": "resolved_at",
+            "label": "Resolved at",
             "icon": "",
             "nullable": false,
             "type": "string"
         },
         {
-            "column": "resolved_at",
-            "label": "Resolved at",
+            "column": "resumed_at",
+            "label": "Resumed at",
             "icon": "",
             "nullable": false,
             "type": "string"
@@ -2890,10 +2890,10 @@
         }
     },
     "uses": [
-        "Illuminate/Database/Eloquent/Factories/HasFactory",
         "Database/Factories/Playground/Cms/Models/PageRevisionFactory",
-        "Illuminate/Support/Carbon",
+        "Illuminate/Database/Eloquent/Factories/HasFactory",
         "Illuminate/Database/Eloquent/Relations/HasOne",
+        "Illuminate/Support/Carbon",
         "Playground/Models/Model"
     ]
 }

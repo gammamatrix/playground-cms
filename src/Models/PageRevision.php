@@ -37,8 +37,8 @@ use Playground\Models\Model;
  * @property ?Carbon $postponed_at
  * @property ?Carbon $published_at
  * @property ?Carbon $released_at
- * @property ?Carbon $resumed_at
  * @property ?Carbon $resolved_at
+ * @property ?Carbon $resumed_at
  * @property ?Carbon $suspended_at
  * @property ?Carbon $timer_end_at
  * @property ?Carbon $timer_start_at
@@ -139,8 +139,8 @@ class PageRevision extends Model
         'postponed_at' => null,
         'published_at' => null,
         'released_at' => null,
-        'resumed_at' => null,
         'resolved_at' => null,
+        'resumed_at' => null,
         'suspended_at' => null,
         'timer_end_at' => null,
         'timer_start_at' => null,
@@ -230,8 +230,8 @@ class PageRevision extends Model
         'postponed_at',
         'published_at',
         'released_at',
-        'resumed_at',
         'resolved_at',
+        'resumed_at',
         'suspended_at',
         'timer_end_at',
         'timer_start_at',
@@ -320,8 +320,8 @@ class PageRevision extends Model
             'postponed_at' => 'datetime',
             'published_at' => 'datetime',
             'released_at' => 'datetime',
-            'resumed_at' => 'datetime',
             'resolved_at' => 'datetime',
+            'resumed_at' => 'datetime',
             'suspended_at' => 'datetime',
             'timer_end_at' => 'datetime',
             'timer_start_at' => 'datetime',
