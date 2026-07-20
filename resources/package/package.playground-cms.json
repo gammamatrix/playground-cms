@@ -72,10 +72,10 @@
     },
     "controllers": [],
     "models": {
-        "Page": "resources/package/page/model.json",
-        "PageRevision": "resources/package/page-revision/model.json",
-        "Snippet": "resources/package/snippet/model.json",
-        "SnippetRevision": "resources/package/snippet-revision/model.json"
+        "Page": "resources/package/playground-cms/page/model.json",
+        "PageRevision": "resources/package/playground-cms/page-revision/model.json",
+        "Snippet": "resources/package/playground-cms/snippet/model.json",
+        "SnippetRevision": "resources/package/playground-cms/snippet-revision/model.json"
     },
     "policies": [],
     "requests": [],

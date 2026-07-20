@@ -51,8 +51,8 @@ return new class extends Migration
             $table->dateTime('postponed_at')->nullable();
             $table->dateTime('published_at')->nullable();
             $table->dateTime('released_at')->nullable();
-            $table->dateTime('resumed_at')->nullable();
             $table->dateTime('resolved_at')->nullable()->index();
+            $table->dateTime('resumed_at')->nullable();
             $table->dateTime('suspended_at')->nullable();
             $table->dateTime('timer_end_at')->nullable()->index();
             $table->dateTime('timer_start_at')->nullable()->index();

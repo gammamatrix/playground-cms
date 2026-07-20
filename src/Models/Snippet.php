@@ -36,8 +36,8 @@ use Playground\Models\Model;
  * @property ?Carbon $postponed_at
  * @property ?Carbon $published_at
  * @property ?Carbon $released_at
- * @property ?Carbon $resumed_at
  * @property ?Carbon $resolved_at
+ * @property ?Carbon $resumed_at
  * @property ?Carbon $suspended_at
  * @property ?Carbon $timer_end_at
  * @property ?Carbon $timer_start_at
