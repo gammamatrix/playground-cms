@@ -11,8 +11,8 @@
     "model": "SnippetRevision",
     "model_attribute": "title",
     "model_attribute_required": true,
-    "model_plural": "SnippetRevisions",
-    "model_singular": "SnippetRevision",
+    "model_plural": "Snippet Revisions",
+    "model_singular": "Snippet Revision",
     "model_slug": "snippet-revision",
     "model_slug_plural": "snippet-revisions",
     "recipe": "cms",
@@ -40,6 +40,7 @@
         }
     },
     "HasMany": [],
+    "HasManyThrough": [],
     "scopes": {
         "sort": {
             "include": "minus",
@@ -83,7 +84,7 @@
         "rank": 0,
         "size": 0,
         "revision": false,
-        "matrix": "{}",
+        "matrix": null,
         "x": null,
         "y": null,
         "z": null,
@@ -127,12 +128,12 @@
         "icon": "",
         "image": "",
         "avatar": "",
-        "ui": "{}",
-        "assets": "{}",
-        "meta": "{}",
+        "ui": null,
+        "assets": null,
+        "meta": null,
         "notes": "[]",
-        "options": "{}",
-        "sources": "{}"
+        "options": null,
+        "sources": null
     },
     "casts": {
         "snippet_type": "string",
@@ -310,7 +311,7 @@
             },
             {
                 "column": "snippet_type",
-                "label": "Snippet Type",
+                "label": "Snippet  Type",
                 "icon": "",
                 "nullable": true,
                 "unsigned": true,
@@ -318,7 +319,7 @@
             },
             {
                 "column": "created_by_id",
-                "label": "Created by id",
+                "label": "Created by ID",
                 "icon": "",
                 "nullable": true,
                 "unsigned": true,
@@ -326,7 +327,7 @@
             },
             {
                 "column": "modified_by_id",
-                "label": "Modified by id",
+                "label": "Modified by ID",
                 "icon": "",
                 "nullable": true,
                 "unsigned": true,
@@ -334,7 +335,7 @@
             },
             {
                 "column": "owned_by_id",
-                "label": "Owned by id",
+                "label": "Owned by ID",
                 "icon": "",
                 "nullable": true,
                 "unsigned": true,
@@ -555,7 +556,7 @@
             {
                 "column": "fixed",
                 "label": "Fixed",
-                "icon": "fa-solid fa-wrench",
+                "icon": "fa-solid fa-wrench text-success",
                 "nullable": true,
                 "unsigned": true,
                 "type": "boolean"
@@ -1030,28 +1031,28 @@
         },
         {
             "column": "snippet_type",
-            "label": "Snippet Type",
+            "label": "Snippet  Type",
             "icon": "",
             "nullable": false,
             "type": "string"
         },
         {
             "column": "created_by_id",
-            "label": "Created by id",
+            "label": "Created by ID",
             "icon": "",
             "nullable": false,
             "type": "uuid"
         },
         {
             "column": "modified_by_id",
-            "label": "Modified by id",
+            "label": "Modified by ID",
             "icon": "",
             "nullable": false,
             "type": "uuid"
         },
         {
             "column": "owned_by_id",
-            "label": "Owned by id",
+            "label": "Owned by ID",
             "icon": "",
             "nullable": false,
             "type": "uuid"
@@ -1402,7 +1403,7 @@
         {
             "column": "fixed",
             "label": "Fixed",
-            "icon": "fa-solid fa-wrench",
+            "icon": "fa-solid fa-wrench text-success",
             "nullable": false,
             "type": "boolean"
         },
@@ -1644,7 +1645,7 @@
         "ids": {
             "snippet_type": {
                 "column": "snippet_type",
-                "label": "Snippet Type",
+                "label": "Snippet  Type",
                 "description": "",
                 "foreign": null,
                 "icon": "",
@@ -1656,7 +1657,7 @@
             },
             "created_by_id": {
                 "column": "created_by_id",
-                "label": "Created by id",
+                "label": "Created by ID",
                 "description": "",
                 "foreign": {
                     "references": "id",
@@ -1671,7 +1672,7 @@
             },
             "modified_by_id": {
                 "column": "modified_by_id",
-                "label": "Modified by id",
+                "label": "Modified by ID",
                 "description": "",
                 "foreign": {
                     "references": "id",
@@ -1686,7 +1687,7 @@
             },
             "owned_by_id": {
                 "column": "owned_by_id",
-                "label": "Owned by id",
+                "label": "Owned by ID",
                 "description": "",
                 "foreign": {
                     "references": "id",
@@ -1845,7 +1846,7 @@
                 "description": "",
                 "icon": "",
                 "html": false,
-                "index": false,
+                "index": true,
                 "nullable": true,
                 "readOnly": false,
                 "type": "dateTime"
@@ -1977,7 +1978,7 @@
                 "column": "fixed",
                 "label": "Fixed",
                 "description": "",
-                "icon": "fa-solid fa-wrench",
+                "icon": "fa-solid fa-wrench text-success",
                 "default": false,
                 "index": false,
                 "nullable": false,
@@ -2423,7 +2424,7 @@
                 "nullable": true,
                 "readOnly": false,
                 "type": "JSON_OBJECT",
-                "default": "{}"
+                "default": null
             },
             "x": {
                 "column": "x",
@@ -2613,7 +2614,7 @@
                 "nullable": true,
                 "readOnly": false,
                 "type": "JSON_OBJECT",
-                "default": "{}"
+                "default": null
             }
         },
         "json": {
@@ -2627,7 +2628,7 @@
                 "nullable": true,
                 "readOnly": false,
                 "type": "JSON_OBJECT",
-                "default": "{}"
+                "default": null
             },
             "meta": {
                 "column": "meta",
@@ -2639,7 +2640,7 @@
                 "nullable": true,
                 "readOnly": false,
                 "type": "JSON_OBJECT",
-                "default": "{}"
+                "default": null
             },
             "notes": {
                 "column": "notes",
@@ -2664,7 +2665,7 @@
                 "nullable": true,
                 "readOnly": false,
                 "type": "JSON_OBJECT",
-                "default": "{}"
+                "default": null
             },
             "sources": {
                 "column": "sources",
@@ -2676,7 +2677,7 @@
                 "nullable": true,
                 "readOnly": false,
                 "type": "JSON_OBJECT",
-                "default": "{}"
+                "default": null
             }
         }
     },

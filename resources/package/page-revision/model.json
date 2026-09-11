@@ -11,8 +11,8 @@
     "model": "PageRevision",
     "model_attribute": "title",
     "model_attribute_required": true,
-    "model_plural": "PageRevisions",
-    "model_singular": "PageRevision",
+    "model_plural": "Page Revisions",
+    "model_singular": "Page Revision",
     "model_slug": "page-revision",
     "model_slug_plural": "page-revisions",
     "recipe": "cms",
@@ -40,6 +40,7 @@
         }
     },
     "HasMany": [],
+    "HasManyThrough": [],
     "scopes": {
         "sort": {
             "include": "minus",
@@ -86,7 +87,7 @@
         "redirect_delay": false,
         "status_code": false,
         "route": null,
-        "matrix": "{}",
+        "matrix": null,
         "x": null,
         "y": null,
         "z": null,
@@ -133,13 +134,13 @@
         "icon": "",
         "image": "",
         "avatar": "",
-        "ui": "{}",
-        "assets": "{}",
-        "meta": "{}",
+        "ui": null,
+        "assets": null,
+        "meta": null,
         "notes": "[]",
-        "options": "{}",
-        "params": "{}",
-        "sources": "{}"
+        "options": null,
+        "params": null,
+        "sources": null
     },
     "casts": {
         "page_type": "string",
@@ -331,7 +332,7 @@
             },
             {
                 "column": "page_type",
-                "label": "Page Type",
+                "label": "Page  Type",
                 "icon": "",
                 "nullable": true,
                 "unsigned": true,
@@ -339,7 +340,7 @@
             },
             {
                 "column": "created_by_id",
-                "label": "Created by id",
+                "label": "Created by ID",
                 "icon": "",
                 "nullable": true,
                 "unsigned": true,
@@ -347,7 +348,7 @@
             },
             {
                 "column": "modified_by_id",
-                "label": "Modified by id",
+                "label": "Modified by ID",
                 "icon": "",
                 "nullable": true,
                 "unsigned": true,
@@ -355,7 +356,7 @@
             },
             {
                 "column": "owned_by_id",
-                "label": "Owned by id",
+                "label": "Owned by ID",
                 "icon": "",
                 "nullable": true,
                 "unsigned": true,
@@ -576,7 +577,7 @@
             {
                 "column": "fixed",
                 "label": "Fixed",
-                "icon": "fa-solid fa-wrench",
+                "icon": "fa-solid fa-wrench text-success",
                 "nullable": true,
                 "unsigned": true,
                 "type": "boolean"
@@ -1107,28 +1108,28 @@
         },
         {
             "column": "page_type",
-            "label": "Page Type",
+            "label": "Page  Type",
             "icon": "",
             "nullable": false,
             "type": "string"
         },
         {
             "column": "created_by_id",
-            "label": "Created by id",
+            "label": "Created by ID",
             "icon": "",
             "nullable": false,
             "type": "uuid"
         },
         {
             "column": "modified_by_id",
-            "label": "Modified by id",
+            "label": "Modified by ID",
             "icon": "",
             "nullable": false,
             "type": "uuid"
         },
         {
             "column": "owned_by_id",
-            "label": "Owned by id",
+            "label": "Owned by ID",
             "icon": "",
             "nullable": false,
             "type": "uuid"
@@ -1500,7 +1501,7 @@
         {
             "column": "fixed",
             "label": "Fixed",
-            "icon": "fa-solid fa-wrench",
+            "icon": "fa-solid fa-wrench text-success",
             "nullable": false,
             "type": "boolean"
         },
@@ -1770,7 +1771,7 @@
         "ids": {
             "page_type": {
                 "column": "page_type",
-                "label": "Page Type",
+                "label": "Page  Type",
                 "description": "",
                 "foreign": null,
                 "icon": "",
@@ -1782,7 +1783,7 @@
             },
             "created_by_id": {
                 "column": "created_by_id",
-                "label": "Created by id",
+                "label": "Created by ID",
                 "description": "",
                 "foreign": {
                     "references": "id",
@@ -1797,7 +1798,7 @@
             },
             "modified_by_id": {
                 "column": "modified_by_id",
-                "label": "Modified by id",
+                "label": "Modified by ID",
                 "description": "",
                 "foreign": {
                     "references": "id",
@@ -1812,7 +1813,7 @@
             },
             "owned_by_id": {
                 "column": "owned_by_id",
-                "label": "Owned by id",
+                "label": "Owned by ID",
                 "description": "",
                 "foreign": {
                     "references": "id",
@@ -1971,7 +1972,7 @@
                 "description": "",
                 "icon": "",
                 "html": false,
-                "index": false,
+                "index": true,
                 "nullable": true,
                 "readOnly": false,
                 "type": "dateTime"
@@ -2103,7 +2104,7 @@
                 "column": "fixed",
                 "label": "Fixed",
                 "description": "",
-                "icon": "fa-solid fa-wrench",
+                "icon": "fa-solid fa-wrench text-success",
                 "default": false,
                 "index": false,
                 "nullable": false,
@@ -2620,7 +2621,7 @@
                 "nullable": true,
                 "readOnly": false,
                 "type": "JSON_OBJECT",
-                "default": "{}"
+                "default": null
             },
             "x": {
                 "column": "x",
@@ -2810,7 +2811,7 @@
                 "nullable": true,
                 "readOnly": false,
                 "type": "JSON_OBJECT",
-                "default": "{}"
+                "default": null
             }
         },
         "json": {
@@ -2824,7 +2825,7 @@
                 "nullable": true,
                 "readOnly": false,
                 "type": "JSON_OBJECT",
-                "default": "{}"
+                "default": null
             },
             "meta": {
                 "column": "meta",
@@ -2836,7 +2837,7 @@
                 "nullable": true,
                 "readOnly": false,
                 "type": "JSON_OBJECT",
-                "default": "{}"
+                "default": null
             },
             "notes": {
                 "column": "notes",
@@ -2861,7 +2862,7 @@
                 "nullable": true,
                 "readOnly": false,
                 "type": "JSON_OBJECT",
-                "default": "{}"
+                "default": null
             },
             "params": {
                 "column": "params",
@@ -2873,7 +2874,7 @@
                 "nullable": true,
                 "readOnly": false,
                 "type": "JSON_OBJECT",
-                "default": "{}"
+                "default": null
             },
             "sources": {
                 "column": "sources",
@@ -2885,7 +2886,7 @@
                 "nullable": true,
                 "readOnly": false,
                 "type": "JSON_OBJECT",
-                "default": "{}"
+                "default": null
             }
         }
     },
