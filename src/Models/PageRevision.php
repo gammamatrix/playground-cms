@@ -159,7 +159,7 @@ class PageRevision extends Model
         'redirect_delay' => false,
         'status_code' => false,
         'route' => null,
-        'matrix' => '{}',
+        'matrix' => null,
         'x' => null,
         'y' => null,
         'z' => null,
@@ -206,13 +206,13 @@ class PageRevision extends Model
         'icon' => '',
         'image' => '',
         'avatar' => '',
-        'ui' => '{}',
-        'assets' => '{}',
-        'meta' => '{}',
+        'ui' => null,
+        'assets' => null,
+        'meta' => null,
         'notes' => '[]',
-        'options' => '{}',
-        'params' => '{}',
-        'sources' => '{}',
+        'options' => null,
+        'params' => null,
+        'sources' => null,
     ];
 
     protected $fillable = [

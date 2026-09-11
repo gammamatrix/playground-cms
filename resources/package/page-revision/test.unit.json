@@ -5,6 +5,8 @@
     "fqdn": "Tests/Unit/Playground/Cms/Models/PageRevision/ModelTest",
     "model": "PageRevision",
     "model_fqdn": "Playground/Cms/Models/PageRevision",
+    "model_variable": "",
+    "model_variable_plural": "",
     "module": "CMS",
     "module_slug": "cms",
     "name": "PageRevision",
@@ -13,7 +15,7 @@
     "package": "playground-cms",
     "playground": true,
     "suite": "unit",
-    "type": "model",
+    "type": "playground-model",
     "uses": [
         "Tests/Unit/Playground/Cms/Models/ModelCase"
     ],

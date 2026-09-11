@@ -149,7 +149,7 @@ class SnippetRevision extends Model
         'rank' => 0,
         'size' => 0,
         'revision' => false,
-        'matrix' => '{}',
+        'matrix' => null,
         'x' => null,
         'y' => null,
         'z' => null,
@@ -193,12 +193,12 @@ class SnippetRevision extends Model
         'icon' => '',
         'image' => '',
         'avatar' => '',
-        'ui' => '{}',
-        'assets' => '{}',
-        'meta' => '{}',
+        'ui' => null,
+        'assets' => null,
+        'meta' => null,
         'notes' => '[]',
-        'options' => '{}',
-        'sources' => '{}',
+        'options' => null,
+        'sources' => null,
     ];
 
     protected $fillable = [

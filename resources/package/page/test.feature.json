@@ -5,6 +5,8 @@
     "fqdn": "Tests/Feature/Playground/Cms/Models/Page/ModelTest",
     "model": "Page",
     "model_fqdn": "Playground/Cms/Models/Page",
+    "model_variable": "",
+    "model_variable_plural": "",
     "module": "CMS",
     "module_slug": "cms",
     "name": "Page",
@@ -13,9 +15,10 @@
     "package": "playground-cms",
     "playground": true,
     "suite": "feature",
-    "type": "model",
+    "type": "playground-model",
     "uses": [
-        "Tests/Feature/Playground/Cms/Models/ModelCase"
+        "Tests/Feature/Playground/Cms/Models/ModelCase",
+        "Playground/Models/User"
     ],
     "models": [],
     "package_providers": []
