@@ -8,7 +8,7 @@
     "module_labels": "CMSs",
     "module_slug": "cms",
     "module_slugs": "cmss",
-    "name": "Cms",
+    "name": "CMS",
     "namespace": "Playground/Cms",
     "organization": "Playground",
     "organization_email": "jeremy.postlethwaite@gmail.com",
@@ -26,7 +26,7 @@
     "withTests": true,
     "withTranslations": false,
     "playground": true,
-    "revision": true,
+    "revision": false,
     "docs_name": "",
     "docs_url": "",
     "package_name": "Playground: CMS",
@@ -75,10 +75,10 @@
     },
     "controllers": [],
     "models": {
-        "Page": "resources/configurations/playground-cms/page/model.json",
-        "PageRevision": "resources/configurations/playground-cms/page-revision/model.json",
-        "Snippet": "resources/configurations/playground-cms/snippet/model.json",
-        "SnippetRevision": "resources/configurations/playground-cms/snippet-revision/model.json"
+        "Page": "resources/package/page/model.json",
+        "PageRevision": "resources/package/page-revision/model.json",
+        "Snippet": "resources/package/snippet/model.json",
+        "SnippetRevision": "resources/package/snippet-revision/model.json"
     },
     "policies": [],
     "requests": [],
