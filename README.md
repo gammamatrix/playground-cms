@@ -18,7 +18,7 @@ Read more on using [Playground: CMS at Read the Docs](https://gammamatrix-playgr
 
 Install this package, with composer, to get access to the CMS Models:
 
-```bash
+```shell
 composer require gammamatrix/playground-cms
 ```
 
@@ -35,14 +35,14 @@ Migrations are disabled by default. This package may sometimes be installed wher
 See the contents of the published config file: [config/playground-cms.php](config/playground-cms.php)
 
 You can publish the config file with:
-```bash
+```shell
 php artisan vendor:publish --provider="Playground\Cms\ServiceProvider" --tag="playground-config"
 ```
 
 ### Environment Variables
 
-|  env()                           | config()                         | Default |
-|----------------------------------|----------------------------------|---------|
+| env()                                | config()                         | Default |
+|--------------------------------------|----------------------------------|---------|
 | `PLAYGROUND_CMS_ABOUT`           | `playground-cms.about`           | `true`  |
 | `PLAYGROUND_CMS_LOAD_MIGRATIONS` | `playground-cms.load.migrations` | `false` |
 - The loading option for migrations does not take effect if the migrations have been exported to your app. The control for loading is handled in the package [ServiceProvider.](src/ServiceProvider.php)
@@ -63,34 +63,34 @@ See the contents of the published config file: [database/migrations](database/mi
 - NOTE: There are 4 tables that will be created, they do have indexes and unique constraints defined; however, this release does not have the foreign key constraint migrations included at this time.
 
 You can publish the migrations file with:
-```bash
+```shell
 php artisan vendor:publish --provider="Playground\Cms\ServiceProvider" --tag="playground-migrations"
 ```
 
 ## Cloc
 
-```sh
+```shell
 composer cloc
 ```
 
-```
+```terminaloutput
 ➜  playground-cms git:(develop) ✗ composer cloc
-      82 text files.
-      77 unique files.
-      14 files ignored.
+      84 text files.
+      78 unique files.                              
+      30 files ignored.
 
-github.com/AlDanial/cloc v 2.08  T=0.04 s (2143.2 files/s, 450106.4 lines/s)
+github.com/AlDanial/cloc v 2.08  T=0.04 s (1917.7 files/s, 407567.5 lines/s)
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
-JSON                            29              0              0          11725
+JSON                            29              0              0          12104
 PHP                             29            323            729           2098
-XML                             14              0              7            828
-YAML                             1              5              0            275
-Markdown                         3             46              0            120
+XML                             15              0              7            961
+YAML                             1              4              0            188
+Markdown                         3             45              0            103
 INI                              1              3              0             12
 -------------------------------------------------------------------------------
-SUM:                            77            377            736          15058
+SUM:                            78            375            736          15466
 -------------------------------------------------------------------------------
 ```
 
@@ -103,30 +103,30 @@ Tests at level 10 on:
 - `tests/Feature/`
 - `tests/Unit/`
 
-```sh
+```shell
 composer analyse
 ```
 
 ## Coding Standards
 
-```sh
+```shell
 composer format
 ```
 
 ## Testing
 
 Unit tests
-```sh
+```shell
 composer test
 ```
 
 Unit and feature tests
-```sh
+```shell
 composer test-dev
 ```
 
 Run unit and feature tests in parallel:
-```sh
+```shell
 composer test-parallel
 ```
 
