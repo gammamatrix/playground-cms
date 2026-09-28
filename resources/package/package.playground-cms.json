@@ -26,7 +26,7 @@
     "withTests": true,
     "withTranslations": false,
     "playground": true,
-    "revision": false,
+    "revision": true,
     "docs_name": "",
     "docs_url": "",
     "package_name": "Playground: CMS",
