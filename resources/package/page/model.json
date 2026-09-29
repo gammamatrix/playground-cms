@@ -24,6 +24,7 @@
     "model_kebab": "page",
     "model_kebabs": "pages",
     "model_plural": "",
+    "model_route_param": "page",
     "model_singular": "",
     "model_slug": "page",
     "model_slugs": "pages",

@@ -24,6 +24,7 @@
     "model_kebab": "snippet-revision",
     "model_kebabs": "snippet-revisions",
     "model_plural": "",
+    "model_route_param": "snippet_revision",
     "model_singular": "",
     "model_slug": "snippet-revision",
     "model_slugs": "snippet-revisions",

@@ -24,6 +24,7 @@
     "model_kebab": "snippet",
     "model_kebabs": "snippets",
     "model_plural": "",
+    "model_route_param": "snippet",
     "model_singular": "",
     "model_slug": "snippet",
     "model_slugs": "snippets",

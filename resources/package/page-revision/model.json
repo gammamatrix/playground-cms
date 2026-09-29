@@ -24,6 +24,7 @@
     "model_kebab": "page-revision",
     "model_kebabs": "page-revisions",
     "model_plural": "",
+    "model_route_param": "page_revision",
     "model_singular": "",
     "model_slug": "page-revision",
     "model_slugs": "page-revisions",
