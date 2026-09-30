@@ -11,6 +11,7 @@
     "model_kebabs": "snippet-revisions",
     "model_label": "Snippet Revision",
     "model_labels": "Snippet Revisions",
+    "model_route_param": "snippet_revision",
     "model_lower": "snippet revision",
     "model_lowers": "snippet revisions",
     "model_slug": "snippet-revision",

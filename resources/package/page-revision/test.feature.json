@@ -11,6 +11,7 @@
     "model_kebabs": "page-revisions",
     "model_label": "Page Revision",
     "model_labels": "Page Revisions",
+    "model_route_param": "page_revision",
     "model_lower": "page revision",
     "model_lowers": "page revisions",
     "model_slug": "page-revision",
