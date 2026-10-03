@@ -41,8 +41,8 @@ php artisan vendor:publish --provider="Playground\Cms\ServiceProvider" --tag="pl
 
 ### Environment Variables
 
-| env()                                | config()                         | Default |
-|--------------------------------------|----------------------------------|---------|
+| env()                            | config()                         | Default |
+|----------------------------------|----------------------------------|---------|
 | `PLAYGROUND_CMS_ABOUT`           | `playground-cms.about`           | `true`  |
 | `PLAYGROUND_CMS_LOAD_MIGRATIONS` | `playground-cms.load.migrations` | `false` |
 - The loading option for migrations does not take effect if the migrations have been exported to your app. The control for loading is handled in the package [ServiceProvider.](src/ServiceProvider.php)
@@ -77,14 +77,14 @@ composer cloc
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
-JSON                            29              0              0          12108
-PHP                             29            322            729           2083
+JSON                            29              0              0          12122
+PHP                             29            325            729           2102
 XML                              3              0              7            215
 YAML                             1              4              0            188
 Markdown                         3             45              0            103
 INI                              1              3              0             12
 -------------------------------------------------------------------------------
-SUM:                            66            374            736          14709
+SUM:                            66            377            736          14742
 -------------------------------------------------------------------------------
 ```
 
