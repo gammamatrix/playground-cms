@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <crap_result>
   <project/>
-  <timestamp>2026-10-11 03:48:10</timestamp>
+  <timestamp>2026-10-23 19:47:40</timestamp>
   <stats>
     <name>Method Crap Stats</name>
-    <methodCount>12</methodCount>
+    <methodCount>18</methodCount>
     <crapMethodCount>0</crapMethodCount>
     <crapLoad>0</crapLoad>
-    <totalCrap>22</totalCrap>
+    <totalCrap>30</totalCrap>
     <crapMethodPercent>0</crapMethodPercent>
   </stats>
   <methods>
@@ -31,6 +31,17 @@
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Models</package>
+      <className>Playground\Cms\Models\Page</className>
+      <methodName>tags</methodName>
+      <methodSignature>tags(): HasManyThrough</methodSignature>
+      <fullMethod>tags(): HasManyThrough</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
       <crapLoad>0</crapLoad>
     </method>
     <method>
@@ -79,6 +90,17 @@
     </method>
     <method>
       <package>Playground\Cms\Models</package>
+      <className>Playground\Cms\Models\Snippet</className>
+      <methodName>tags</methodName>
+      <methodSignature>tags(): HasManyThrough</methodSignature>
+      <fullMethod>tags(): HasManyThrough</fullMethod>
+      <crap>2</crap>
+      <complexity>1</complexity>
+      <coverage>0</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Models</package>
       <className>Playground\Cms\Models\SnippetRevision</className>
       <methodName>casts</methodName>
       <methodSignature>casts(): array</methodSignature>
@@ -94,6 +116,50 @@
       <methodName>snippet</methodName>
       <methodSignature>snippet(): HasOne</methodSignature>
       <fullMethod>snippet(): HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Models</package>
+      <className>Playground\Cms\Models\Tag</className>
+      <methodName>casts</methodName>
+      <methodSignature>casts(): array</methodSignature>
+      <fullMethod>casts(): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Models</package>
+      <className>Playground\Cms\Models\Tagged</className>
+      <methodName>casts</methodName>
+      <methodSignature>casts(): array</methodSignature>
+      <fullMethod>casts(): array</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Models</package>
+      <className>Playground\Cms\Models\Tagged</className>
+      <methodName>creator</methodName>
+      <methodSignature>creator(): HasOne</methodSignature>
+      <fullMethod>creator(): HasOne</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package>Playground\Cms\Models</package>
+      <className>Playground\Cms\Models\Tagged</className>
+      <methodName>tag</methodName>
+      <methodSignature>tag(): HasOne</methodSignature>
+      <fullMethod>tag(): HasOne</fullMethod>
       <crap>1</crap>
       <complexity>1</complexity>
       <coverage>100</coverage>

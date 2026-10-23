@@ -21,6 +21,16 @@ Model (Tests\Feature\Playground\Cms\Models\Snippet\Model)
  [x] Verify model relationships
  [x] Factory create
 
+Model (Tests\Feature\Playground\Cms\Models\Tagged\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
+Model (Tests\Feature\Playground\Cms\Models\Tag\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Factory create
+
 Model (Tests\Unit\Playground\Cms\Models\PageRevision\Model)
  [x] Model instance
  [x] Verify model relationships
@@ -37,6 +47,16 @@ Model (Tests\Unit\Playground\Cms\Models\SnippetRevision\Model)
  [x] Model factory make
 
 Model (Tests\Unit\Playground\Cms\Models\Snippet\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
+Model (Tests\Unit\Playground\Cms\Models\Tagged\Model)
+ [x] Model instance
+ [x] Verify model relationships
+ [x] Model factory make
+
+Model (Tests\Unit\Playground\Cms\Models\Tag\Model)
  [x] Model instance
  [x] Verify model relationships
  [x] Model factory make
