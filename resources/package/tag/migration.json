@@ -1,0 +1,17 @@
+{
+    "class": "2010_09_30_000000_create_cms_tags_table",
+    "config": "playground-cms",
+    "model": "Tag",
+    "model_fqdn": "Playground/Cms/Models/Tag",
+    "module": "Cms",
+    "module_slug": "cms",
+    "name": "Tag",
+    "namespace": "Playground/Cms",
+    "organization": "Playground",
+    "package": "playground-cms",
+    "table": "cms_tags",
+    "type": "playground-model",
+    "models": [],
+    "create": true,
+    "update": false
+}

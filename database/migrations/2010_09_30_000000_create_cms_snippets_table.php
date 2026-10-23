@@ -10,9 +10,10 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Query\Expression;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Playground\Cms\Models\Snippet;
 
 /**
- * \Playground\Cms\Models\Snippet
+ * @see Snippet
  */
 return new class extends Migration
 {

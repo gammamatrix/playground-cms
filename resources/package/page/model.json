@@ -60,7 +60,18 @@
             "localKey": "id"
         }
     },
-    "HasManyThrough": [],
+    "HasManyThrough": {
+        "tags": {
+            "comment": "The tags of the page.",
+            "accessor": "tags",
+            "related": "Tag",
+            "firstKey": "page_id",
+            "secondKey": "id",
+            "localKey": "id",
+            "secondLocalKey": "tag_id",
+            "through": "Tagged"
+        }
+    },
     "scopes": {
         "sort": {
             "include": "minus",
@@ -2882,6 +2893,7 @@
         "Database/Factories/Playground/Cms/Models/PageFactory",
         "Illuminate/Database/Eloquent/Factories/HasFactory",
         "Illuminate/Database/Eloquent/Relations/HasMany",
+        "Illuminate/Database/Eloquent/Relations/HasManyThrough",
         "Illuminate/Support/Carbon",
         "Playground/Models/Model"
     ]

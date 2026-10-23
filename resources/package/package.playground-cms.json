@@ -79,7 +79,9 @@
         "Page": "resources/configurations/playground-cms/page/model.json",
         "PageRevision": "resources/configurations/playground-cms/page-revision/model.json",
         "Snippet": "resources/configurations/playground-cms/snippet/model.json",
-        "SnippetRevision": "resources/configurations/playground-cms/snippet-revision/model.json"
+        "SnippetRevision": "resources/configurations/playground-cms/snippet-revision/model.json",
+        "Tag": "resources/configurations/playground-cms/tag/model.json",
+        "Tagged": "resources/configurations/playground-cms/tagged/model.json"
     },
     "policies": [],
     "requests": [],

@@ -11,6 +11,7 @@ namespace Playground\Cms\Models;
 use Database\Factories\Playground\Cms\Models\SnippetFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasManyThrough;
 use Illuminate\Support\Carbon;
 use Playground\Models\Model;
 
@@ -377,6 +378,23 @@ class Snippet extends Model
             SnippetRevision::class,
             'snippet_id',
             'id'
+        );
+    }
+
+    /**
+     * The tags of the snippet.
+     *
+     * @return HasManyThrough<Tag, Tagged, $this>
+     */
+    public function tags(): HasManyThrough
+    {
+        return $this->hasManyThrough(
+            Tag::class,
+            Tagged::class,
+            'snippet_id',
+            'id',
+            'id',
+            'tag_id'
         );
     }
 }

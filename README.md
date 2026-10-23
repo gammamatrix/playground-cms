@@ -54,13 +54,15 @@ This package includes [factories](database/factories), models and [migrations](d
 - [PageRevision](src/Models/PageRevision.php)
 - [Snippet](src/Models/Snippet.php)
 - [SnippetRevision](src/Models/SnippetRevision.php)
+- [Tag](src/Models/Tag.php)
+- [Tagged](src/Models/Tagged.php)
 
 ## Migrations
 
 All migrations are disabled by default.
 
 See the contents of the published config file: [database/migrations](database/migrations)
-- NOTE: There are 4 tables that will be created, they do have indexes and unique constraints defined; however, this release does not have the foreign key constraint migrations included at this time.
+- NOTE: There are 6 tables that will be created, they do have indexes and unique constraints defined; however, this release does not have the foreign key constraint migrations included at this time.
 
 You can publish the migrations file with:
 ```shell
@@ -77,14 +79,14 @@ composer cloc
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
-JSON                            29              0              0          12123
-PHP                             29            325            729           2102
+JSON                            39              0              0          15300
+PHP                             39            430            953           2701
 XML                              3              0              7            215
-YAML                             1              4              0            188
-Markdown                         3             45              0            103
+YAML                             1              4              0            187
+Markdown                         3             45              0            105
 INI                              1              3              0             12
 -------------------------------------------------------------------------------
-SUM:                            66            377            736          14743
+SUM:                            86            482            960          18520
 -------------------------------------------------------------------------------
 ```
 

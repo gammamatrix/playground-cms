@@ -1,0 +1,17 @@
+{
+    "class": "2010_09_30_000000_create_cms_tagged_table",
+    "config": "playground-cms",
+    "model": "Tagged",
+    "model_fqdn": "Playground/Cms/Models/Tagged",
+    "module": "Cms",
+    "module_slug": "cms",
+    "name": "Tagged",
+    "namespace": "Playground/Cms",
+    "organization": "Playground",
+    "package": "playground-cms",
+    "table": "cms_tagged",
+    "type": "playground-model-tagged",
+    "models": [],
+    "create": true,
+    "update": false
+}

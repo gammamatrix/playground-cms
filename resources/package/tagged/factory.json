@@ -1,0 +1,16 @@
+{
+    "class": "TaggedFactory",
+    "config": "playground-cms",
+    "fqdn": "Database/Factories/Database/Factories/Playground/Cms/Models/TaggedFactory",
+    "module": "Cms",
+    "module_slug": "cms",
+    "name": "TaggedFactory",
+    "namespace": "Database/Factories/Playground/Cms/Models",
+    "organization": "Playground",
+    "package": "playground-cms",
+    "model": "Tagged",
+    "model_fqdn": "Playground/Cms/Models/Tagged",
+    "recipe": "cms",
+    "type": "playground-model-tagged",
+    "models": []
+}

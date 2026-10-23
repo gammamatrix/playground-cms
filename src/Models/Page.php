@@ -11,6 +11,7 @@ namespace Playground\Cms\Models;
 use Database\Factories\Playground\Cms\Models\PageFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasManyThrough;
 use Illuminate\Support\Carbon;
 use Playground\Models\Model;
 
@@ -405,6 +406,23 @@ class Page extends Model
             PageRevision::class,
             'page_id',
             'id'
+        );
+    }
+
+    /**
+     * The tags of the page.
+     *
+     * @return HasManyThrough<Tag, Tagged, $this>
+     */
+    public function tags(): HasManyThrough
+    {
+        return $this->hasManyThrough(
+            Tag::class,
+            Tagged::class,
+            'page_id',
+            'id',
+            'id',
+            'tag_id'
         );
     }
 }

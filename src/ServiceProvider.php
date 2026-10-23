@@ -80,6 +80,8 @@ class ServiceProvider extends AuthServiceProvider
             '2010_09_30_000000_create_cms_page_revisions_table.php',
             '2010_09_30_000000_create_cms_snippets_table.php',
             '2010_09_30_000000_create_cms_snippet_revisions_table.php',
+            '2010_09_30_000000_create_cms_tags_table.php',
+            '2010_09_30_000000_create_cms_tagged_table.php',
         ] as $file) {
             $migrations[dirname(__DIR__).'/database/migrations/'.$file] = database_path('migrations/'.$file);
         }
