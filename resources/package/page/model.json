@@ -113,7 +113,7 @@
         "status": 0,
         "rank": 0,
         "size": 0,
-        "revision": false,
+        "revision": 0,
         "redirect_delay": false,
         "status_code": false,
         "route": null,
@@ -2568,7 +2568,7 @@
                 "readOnly": true,
                 "type": "bigInteger",
                 "unsigned": true,
-                "default": false
+                "default": 0
             },
             "redirect_delay": {
                 "column": "redirect_delay",

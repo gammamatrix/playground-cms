@@ -154,7 +154,7 @@ class Page extends Model
         'status' => 0,
         'rank' => 0,
         'size' => 0,
-        'revision' => false,
+        'revision' => 0,
         'redirect_delay' => false,
         'status_code' => false,
         'route' => null,

@@ -147,7 +147,7 @@ class Snippet extends Model
         'status' => 0,
         'rank' => 0,
         'size' => 0,
-        'revision' => false,
+        'revision' => 0,
         'matrix' => null,
         'x' => null,
         'y' => null,
